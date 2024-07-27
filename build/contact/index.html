@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us-Page</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/font-size/font-size.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
+     <style>
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+          }
+          .navbar-light .navbar-brand {
+            color: white;
+          }
+          .navbar-light .nav-link.active {
+            color: white !important;
+            
+          }
+          .navbar-light .nav-link.dropdown-toggle::after {
+            color: white;
+          }
+          .navbar-nav .nav-item {
+            margin-right: 100px; /* Adjust this value for more or less spacing */
+          }
+          .font-roboto {
+              font-family: 'Roboto', sans-serif;
+            }
+            .font-montserrat {
+              font-family: 'Montserrat', sans-serif;
+            }
+            .font-pacifico {
+              font-family: 'Pacifico', cursive;
+            }
+            .navbar-brand img {
+              height: 180px; /* Adjust this value for logo size */
+              margin-right: 10px; /* Space between logo and brand name */
+            }
+           
+
+
+         
+
+            .container {
+                padding: 20px;
+            }
+            .image-container {
+                display: flex;
+                align-items: center;
+                gap: 20px; /* Space between image and text */
+            }
+            .cylindrical-image {
+              
+                max-width: 500px; /* Adjust to ensure it fits in a single line */
+               
+                object-fit: cover;
+                
+                height: auto;
+                border-top-left-radius: 120px;
+                border-top-right-radius:120px;
+                border-bottom-left-radius: 120px;
+                border-bottom-right-radius: 120px;
+                object-fit: cover;
+            }
+            .text-large {
+                font-size: 82px;
+                font-family: 'Red Hat Display', sans-serif;
+                white-space: nowrap; /* Prevent text from breaking into multiple lines */
+            }
+            .text-extra-large {
+                text-align: left;
+                margin-left:50px;
+                font-size: 80px;
+                font-family: 'Lato', sans-serif;
+                white-space: nowrap; /* Prevent text from breaking into multiple lines */
+            }
+            .highlight {
+                background-color: #3fccb0; /* Custom background color */
+                color: white; /* Text color to contrast with the background */
+                padding: 0 5px; /* Adds padding around the text */
+                border-radius: 3px; /* Optional: Rounded corners for the background */
+            }
+
+        </style>
+</head>
+<body>
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div id="section1" class="section" style="margin-left:40px;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="margin-left:30px">
+                <a class="navbar-brand" href="#">
+                  <img src="/static/logo.jpeg" width="80px" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home" style="color:black;">Home</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:black;">About </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link" href="/blog" style="color: black;">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: black;">Work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: black;">Team</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: black;">Carrier</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact" style="color: black;">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Get Started</button>
+                  </form>
+                </div>
+              </nav>
+
+
+        </div>
+
+
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column flex-md-row align-items-center">
+                    <img src="/static/building.jpeg" alt="Cylindrical Image" class="cylindrical-image img-fluid mb-3 mb-md-0">
+                    <div class="text-large ms-md-3 text-center text-md-start">
+                        <p class="mb-0">Do This</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col text-center text-md-start">
+                    <p class="text-extra-large mb-0">
+                        <span class="highlight">Faster with</span> us
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+   
+        <div id="section2" class="section" style="margin-top:80px;">
+          <div class="row">
+            <div class="col-sm-6">
+                
+                  
+
+
+                  <form style="margin-left: 50px;margin-right:120px;margin-top:30px;">
+                    <div class="mb-3">
+                      <label for="exampleInputText1" class="form-label">NAME</label>
+                      <input type="text" class="form-control" id="exampleInputText1" >
+                     
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                       
+                    </div>
+                      <div class="mb-3">
+                        <label for="exampleInputText3" class="form-label">INDIVIDUAL / COMPANY</label>
+                        <input type="text" class="form-control" id="exampleInputText3" >
+                       
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputText4" class="form-label">COMPANY NAME IF COMPANY</label>
+                        <input type="text" class="form-control" id="exampleInputText4" >
+                       
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea2" class="form-label">HOW CAN WE HELP YOU</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                      </div>
+                    
+                  </form>
+
+
+
+
+
+            </div>
+            <div class="col-sm-6 bg-cover" style="background-image: url('/static/building.jpeg'); color: white; height: 650px; background-size: cover;margin-top:-30px;background-position: center;">
+
+            </div>
+
+          </div>
+        </div>
+        
+
+        <marquee behavior="scroll" direction="left">
+        <ul style=" display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;">
+
+            <li style="margin-right: 20px;font-size:38px;font-family:'Lato', sans-serif ;color:grey"> ...FOR INNOVATION</li>
+            <li style="margin-right: 20px; font-size:38px;font-family:'Lato', sans-serif;color:grey ">....FOR SOLUTION</li>
+            <li style="margin-right: 20px; font-size:38px;font-family:'Lato', sans-serif;color:grey ">....FOR PEOPLE</li>
+        </ul></marquee>
+
+
+
+
+
+
+   
+
+      
+
+
+
+
+</div>
+
+
+<!-- <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
