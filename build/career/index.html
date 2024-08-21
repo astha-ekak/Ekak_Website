@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+         
+.navbar-light .navbar-nav .nav-link {
+color: white;
+}
+.navbar-light .navbar-brand {
+color: white;
+}
+.navbar-light .nav-link.active {
+color: white !important;
+}
+.navbar-light .nav-link.dropdown-toggle::after {
+color: white;
+}
+.navbar-nav .nav-item {
+margin-right: 100px;
+}
+.font-roboto {
+font-family: 'Roboto', sans-serif;
+}
+.font-montserrat {
+font-family: 'Montserrat', sans-serif;
+}
+.font-pacifico {
+font-family: 'Pacifico', cursive;
+}
+
+
+
+
+
+           
+
+.card {
+            border-radius: 20px;
+            overflow: hidden;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            height: 650px; 
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        .half-card {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            border-radius:10px;
+        }
+        .half-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius:10px;
+        }
+
+
+
+
+
+        
+        .row-text-center {
+            text-align: center;
+        }
+        .title-text {
+            font-size: 60px;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight:bold;
+        }
+        .body-text {
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+        }
+        .btn-custom {
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .title-text {
+                font-size: 35px;
+            }
+            .body-text {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .title-text {
+                font-size: 25px;
+            }
+            .body-text {
+                font-size: 12px;
+            }
+        }
+ </style>
+ </head>
+ <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="/static/logo1.png" width="200px" class="d-inline-block align-top" >
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/home" style="color:black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about" style="color:black;">About </a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/blog" style="color: black;">Blogs</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/career" style="color: black;">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact" style="color: black;">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">Get Started</button>
+      </form>
+    </div>
+  </nav>
+
+      <div class="container-fluid" style="margin-bottom:30px;margin-top:320px" >
+        <div class="row  no-gap">
+            <div class="col d-flex justify-content-center align-items-center">
+                <p style="font-family:'Lato', sans-serif;font-size:40px;font-weight:bold">Do you have the zeal to contribute to the real world?</p>
+            </div>
+        </div>
+    
+        <div class="row no-gap">
+            <div class="col d-flex justify-content-center align-items-center">
+                <p>We are transforming businesses and consumer experience every day with technology.</p>
+            </div>
+        </div>
+    
+        <div class="container-fluid my-5">
+          <div class="row" style="margin-top:150px">
+              <!-- First Card -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                      <img src="/static/career2.jpg" alt="Image 1">
+                  </div>
+              </div>
+              <!-- Second Card -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                      <div class="half-card " >
+                          <img src="/static/career7.jpg" style="height:300px; ">
+                      </div>
+                      <div class="half-card pt-1" >
+                          <img src="/static/career3.jpg" alt="Image 3" >
+                      </div>
+                  </div>
+              </div>
+              <!-- Third Card -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                      <img src="/static/career1.jpg" alt="Image 4">
+                  </div>
+              </div>
+              <!-- Fourth Card -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                      <div class="half-card">
+                          <img src="/static/career8.jpg" style="height:300px; ">
+                      </div>
+                      <div class="half-card pt-1">
+                          <img src="/static/career5.jpg" alt="Image 6">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="card text-center" style="border:none;margin-top:150px;height:300px">
+      <div class="card-body">
+          <h5 class="card-title" 
+          style="font-size:65px;font-family:'Red Hat Display', sans-serif;font-weight:600">WHY JOIN<br>US?</h5>
+          <p class="card-text  text-dark" 
+             style="display: inline-block; transform: rotate(-10deg); padding: 5px;background-color: rgb(171, 247, 247);border-radius: 50px;">
+             P.s. we have many
+          </p>
+      </div>
+  </div>
+  
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left:150px;margin-top:90px">
+        <div class="col">
+          <div class="card h-100" style="border:none;height:300px">
+            
+            <div class="card-body">
+              <h5 class="card-title " style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Fast Growing Company</h5>
+              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">We’re at the inflection point<br> to achieved accelerated</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;height:300px">
+           
+            <div class="card-body" >
+              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Great Colleague</h5>
+              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">Closely tied and  Supportive<br> team.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;height:300px">
+           
+            <div class="card-body">
+              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Don’t Stop Learning</h5>
+              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">An environment is always on<br> the to-do list</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;height:300px">
+          
+            <div class="card-body">
+              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Free Snack  of your Choice </h5>
+              <p class="card-text"   style="font-size:19px;font-family:'Lato',sans-serif"> We know you’re are foodie at heart,<br> which is why we have free snack<br> beforehand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="border:none;height:300px">
+              
+              <div class="card-body">
+                <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;"> Work-Life Balance </h5>
+                <p class="card-text"  style="font-size:19px;font-family:'Lato',sans-serif">As much as we prioritize work,<br> we never put it before life.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="border:none;height:300px"> 
+             
+              <div class="card-body">
+                <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Cross Domain Exposure</h5>
+                <p class="card-text"  style="font-size:19px;font-family:'Lato',sans-serif">Highly passionate & cohesive<br> team  of technology & Business<br> people</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid my-5 pt-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/static/career6.jpg" alt="Image 1" >
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="half-card">
+                        <img src="/static/career9.jpg" alt="Image 2">
+                    </div>
+                    <div class="half-card pt-2">
+                        <img src="/static/career4.jpg" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/static/career10.jpg" alt="Image 4">
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="container my-5" >
+      <!-- First Row -->
+      <div class="row mb-4 row-text-center" style="margin-left:50px;margin-top:120px">
+          <div class="col">
+              <h1 class="title-text">WANT TO JOIN US?</h1>
+          </div>
+      </div>
+      <!-- Second Row -->
+      <div class="row mb-4 row-text-center">
+          <div class="col">
+              <p class="body-text">Drop you resume capturing what kind of role you are<br> applying for. </p>
+          </div>
+      </div>
+      <!-- Third Row -->
+      <div class="row mb-4 row-text-center">
+          <div class="col">
+              <button class="btn btn-primary btn-lg btn-custom" style="border-radius:50px">career@ekak.in</button>
+          </div>
+      </div>
+  </div>
+
+   
+ </body>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <header class="text-light" style="background-color:#158d91">
+    <div class="container-fluid p-0 m-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 pl-5 text-center text-md-left">
+                <h1 style="font-size: 1.2rem;margin-top:80px">Sign up to get latest updates, promotions, and more.</h1>
+                <form style="margin-top:50px">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn btn-primary" style="background-color: black;">SIGN UP</button>
+                </form>
+                <p class="small">By signing up, you agree that your data will be collected and used subject to our policy.</p>
+            </div>
+            <div class="col-md-6 pr-5 text-center text-md-end">
+                <ul class="nav justify-content-center justify-content-md-end">
+                    <li class="nav-item"><a class="nav-link" href="/about" style="font-size:18px;color:white;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Value</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog" style="font-size:18px;color:white;">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/career" style="font-size:18px;color:white;">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact" style="font-size:18px;color:white;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<footer class="footer p-0 m-0" style="background-color:#158d91">
+    <div class="container-fluid position-relative ">
+        <div class="row">
+            <div class="col-md-6 p-0 m-0 text-center text-md-left">
+                <img src="/static/ekak (3).png" style="max-width:100%; height:auto;">
+            </div>
+            <div class="col-md-6 pr-5  contact-column text-center text-md-right " style="margin-top:220px">
+                <h4>Contact with Us</h4>
+                <div class="container text-left d-flex flex-row-reverse">
+                   
+                  
+                    <a href="#"><small style="color:white" class="fa fa-lg fa-linkedin pull-right p-2">  </small></a>
+                    <a href="#"><small style="color:white" class="fa fa-lg fa-twitter pull-right p-2">  </small></a>
+                    <a href="#"><small style="color:white" class="fa fa-lg fa-facebook pull-right pr-2 mt-2">  </small></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

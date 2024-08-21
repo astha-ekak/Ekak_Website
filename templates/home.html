@@ -4,7 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap" rel="stylesheet">
+     
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
+      
+   
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -12,6 +21,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <style>
+      *{padding:0;
+        margin:0;
+
+      }
         .navbar-light .navbar-nav .nav-link {
             color: white;
           }
@@ -25,7 +38,7 @@
             color: white;
           }
           .navbar-nav .nav-item {
-            margin-right: 100px; /* Adjust this value for more or less spacing */
+            margin-right: 100px; 
           }
           .font-roboto {
               font-family: 'Roboto', sans-serif;
@@ -37,19 +50,20 @@
               font-family: 'Pacifico', cursive;
             }
             .navbar-brand img {
-              height: 130px; /* Adjust this value for logo size */
-              margin-right: 10px; /* Space between logo and brand name */
+             
+              margin-right: 0%;
+              margin-left:0%; 
             }
       .column {
-        height: 450px; /* You can adjust the height as needed */
-        border: px solid black; /* Just to visualize the columns */
+        height: 450px;
+        border: px solid black; 
         display: inline-flex;
         justify-content: center;
         align-items: center;
       }
       
       .card {
-        height: 100%; /* Ensures the cards take up the full height */
+        height: 100%; 
       }
       .card-body {
         display: flex;
@@ -58,21 +72,21 @@
         align-items: center;
       }
       .card-img-top {
-        height:500px; /* Adjust the height as needed */
+        height:500px; 
         object-fit: cover;
       }
       .icon-container {
         display: flex;
-        flex-direction: column; /* Stack icon, heading, and paragraph vertically */
+        flex-direction: column; 
         align-items: center;
       }
       .icon-card {
-        width: 100%; /* Full width inside card */
-        margin-bottom: 20px; /* Space between rows */
+        width: 100%; 
+        margin-bottom: 20px;
         text-align: center;
       }
       .icon-card i {
-        font-size: 50px; /* Adjust icon size as needed */
+        font-size: 50px; 
         color: #333;
       }
       .icon-card h6 {
@@ -83,11 +97,11 @@
       .cylindrical-card {
         border:none;
         border-radius: 200px;
-        width:70%;
-        height:580px;
+        width:60%;
+        height:500px;
         margin:50px;
        
-        /* Add more CSS properties for cylindrical effect */
+        
     }
     
     .card-img-top {
@@ -96,7 +110,7 @@
         border-bottom-left-radius: 140px;
         border-bottom-right-radius: 140px;
         width: 100%;
-        height: 100%; /* Ensures the image covers the whole top part */
+        height: 100%; 
         object-fit: cover;
        
     }
@@ -107,7 +121,7 @@
 
 
     .testimonial-container {
-        background-color: #f5f5f5;
+        background-color: white;
         padding: 40px;
         text-align: center;
     }
@@ -120,7 +134,8 @@
         margin-bottom: 20px;
     }
     .author {
-        font-weight: bold;
+        
+        font-size:1.25rem;
     }
     .logos {
         display: flex;
@@ -145,43 +160,55 @@
    
    
    .text-left-50px {
-    font-size: 3rem; /* Adjusts the font size to be responsive */
+    font-size: 3rem; 
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
+    margin-left:20px;
+    padding:10px;
 }
 
 .text-left-20px {
-    font-size: 1.375rem; /* Adjusts the font size to be responsive */
+    font-size: 1.375rem; 
     font-family: 'Red Hat Display', sans-serif;
+    margin-left:20px;
+    padding:10px;
 }
 
 .text-right-100px {
-    font-size: 6.25rem; /* Adjusts the font size to be responsive */
+    font-size: 6.25rem; 
     font-family: 'Glacial Indifference', sans-serif;
     font-weight: bold;
+    margin-right:20px;
+    padding:10px;
+   
 }
 
 .text-right-24px {
-    font-size: 1.1875rem; /* Adjusts the font size to be responsive */
+    font-size: 1.1875rem; 
     font-family: 'Lato', sans-serif;
+    margin-right:20px;
+    padding:10px;
 }
 
 @media (max-width: 768px) {
         .responsive-section {
-            margin-left: 15px; /* Adjust margin for smaller screens */
+            margin-left: 15px; 
         }
     }
 
     @media (max-width: 576px) {
         .responsive-section {
-            font-size: 32px; /* Adjust font size for very small screens */
-            margin-left: 10px; /* Adjust margin for very small screens */
+            font-size: 28px; 
+            margin-left: 10px; 
         }
     }
+    
+
+    
     .footer {
         background-color: #0D6667;
         color: white;
-        padding: 20px 0;
+        
     }
 
     .footer .bottom-left-text {
@@ -203,341 +230,388 @@
         padding: 0;
     }
 
-    .footer .contact-icons {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-    }
-
-    .footer .contact-icons li a {
-        color: white;
-        font-size: 1.5rem;
-    }
+    
 
 
-
+   
 
     
     </style>
-    <title>Hello, world!</title>
+    <title>Ekak Website</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="#">
-        <img src="/static/logo.jpeg" width="80px" height="30" class="d-inline-block align-top" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  {% include 'base_header.html' %}
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/home" style="color:black;">Home</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:black;">About </a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/blog" style="color: black;">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: black;">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: black;">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: black;">Carrier</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact" style="color: black;">Contact</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-dark my-2 my-sm-0" type="submit">Get Started</button>
-        </form>
-      </div>
-    </nav>
-
-    <div class="container-fluid " style="margin-top:50px;padding:10px">
-      <div class="row" style="margin-left:0px">
-        <div class="col-md-3 column">
-          <div class="col text-left font-weight-bold" style="font-size:60px">
-            <p><span style="color:#B3631A">\</span>We proudly </p>
-          </div>
-        </div>
-       
-            <div class="col-md-2 column d-flex justify-content-center align-items-center">
-                <!-- Image with cylindrical effect -->
-                <div class="bg-image " style="width: 100%; height: 70%;;background-image: url('/static/building.jpeg'); background-size: cover; background-position: center;
-                border-top-left-radius: 120px;
-        border-top-right-radius:120px;
-        border-bottom-left-radius: 120px;
-        border-bottom-right-radius: 120px;">
+    <div class="container-fluid " style="margin-top:220px;">
+      <div class="row justify-content-start" >
+        <div class="col-md-6 col-12">
+            <div class="row">
+                <div class="col-md-6 pl-5 col-12 d-flex justify-content-center align-items-center my-2 font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
+                    <p class="head-text" style="white-space: nowrap;">
+                        <span style="color:#B3631A;">\</span> We Proudly
+                    </p>
+                </div>
+                
+                <div class="col-md-4 pl-4 col-12 d-flex justify-content-center align-items-center my-2 p-2">
+                    <img src="/static/Ekak Website 1.gif" alt="GIF" class="img-fluid">
+                </div>
+                
+                <div class="col-md-2 col-12 pl-4 d-flex justify-content-center align-items-center my-2  font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
+                    <p class="head-text" style=" white-space: nowrap; margin: 0;">
+                        Work
+                    </p>
                 </div>
             </div>
-       
-        <div class="col-md-7 column">
-          <div class="col text-left font-weight-bold" style="font-size:60px">
-            <p>Work </p>
-          </div>
         </div>
-      </div>
+    </div>
+<style>
+  .head-text{
+            font-family: 'Red Hat Display', sans-serif;
+            font-size:85px;
+
+          }
+             @media (max-width: 1200px) {
+                 .head-text {
+                     font-size: 40px;
+                 }
+             }
+         
+             @media (max-width: 992px) {
+                 .head-text {
+                     font-size: 35px;
+                 }
+             }
+         
+             @media (max-width: 768px) {
+                 .head-text {
+                     font-size: 30px;
+                 }
+             }
+         
+             @media (max-width: 576px) {
+                 .head-text {
+                     font-size: 45px;
+                     font-weight:600;
+                     font-family:century-gothic,sans-serif;
+                 }
+             }
+</style>
     
 
   
-      <section class="row">
-        <div class="col text-right my-2" style="font-size:30px;margin-right:20px;padding:30px">
-          <p>
-            Optimize your business with <br>this template, <span style="color:#FF914D">designed </span>to<br> boost your brand, streamline.
-          </p>
+      <section class="row pt-5 mt-5">
+        <div class="col text-md-right text-center my-2" style="font-size: 1.4rem; font-size: calc(1.4rem + 0.5vw); margin-right: 20px;">
+            <p>
+                Optimize your business with <br> this template, <span style="color:#FF914D">designed</span> to <br> boost your brand, streamline.
+            </p>
         </div>
-      </section>
+    </section>
+    
     </div>
 
 
-    <div class="container-fluid" >
-        <section class="row">
+   
+        <section class="row " style="margin-top:150px;">
             <div class="col text-left responsive-section">
-                <p>
+                <p class="responsive-text" >
                     Ekak Innovations is a product development <br>firm dedicated to creating <span style="color:#FF914D">innovative</span> solutions<br> for today's most pressing challenges.
                 </p>
             </div>
-        </section>>
-    </div>
+        </section>
 
-    <div class="container-fluid" style="margin-top:50px;margin-left:50px">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="border:none;">
-            <img src="/static/building.jpeg" class="card-img-top" alt="Card Image" style="max-width:370px;max-height:550px;
-             border-top-left-radius: 60px;
-        border-top-right-radius:60px;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;">
-           
-          </div>
+        <style>
+          .responsive-text{
+            font-family: 'Red Hat Display', sans-serif;
+            font-size:50px;
+
+          }
+             @media (max-width: 1200px) {
+                 .responsive-text {
+                     font-size: 27px;
+                 }
+             }
+         
+             @media (max-width: 992px) {
+                 .responsive-text {
+                     font-size: 23px;
+                 }
+             }
+         
+             @media (max-width: 768px) {
+                 .responsive-text {
+                     font-size: 20px;
+                 }
+             }
+         
+             @media (max-width: 576px) {
+                 .responsive-text {
+                     font-size: 17px;
+                     font-weight:600;
+                     font-family:century-gothic,sans-serif;
+                 }
+             }
+        </style>
+   
+
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12 mt-2 d-flex justify-content-center">
+        <div class="card" style="border:none;">
+            <img src="/static/Portraits.png" class="card-img-top img-fluid" alt="Card Image" style="border-top-left-radius: 70px;
+                border-top-right-radius: 70px;
+                border-bottom-left-radius: 70px;
+                border-bottom-right-radius: 70px; width: 100%; height: auto; max-width: 100%; max-height: 60vh;">
         </div>
-        <div class="col-md-8">
-          <div class="card text-left" style="border:none;">
-            <div class="card-body">
-             
-              <div class="icon-container">
-                <div class="icon-card col text-left ">
-                  <i class="fa fa-pagelines fa-sm" aria-hidden="true"></i>
-                  <h6 style="font-size:20px">Renewable Energy</h6>
-                  <p class="small">At Ekak, we believe in the power of renewable energy to transform communities and improve lives. That's why we're proud to offer a range of solar lamps <br> and solar charging hubs with remote monitoring systems. </p>
-                </div>
-                <div class="icon-card col text-left">
-                  <i class="fa fa-print fa-sm" aria-hidden="true"></i>
-                  <h6 style="font-size:20px">3D Printing </h6>
-                  <p class="small">We share passion about the possibilities of 3D printing and additive manufacturing. Whether you need a one-of-a-kind prototype, a small production run , or<br> a large-scale manufacturing solution, we can help you achieve quickly, efficiently, & cost-effectively.</p>
-                </div>
-                <div class="icon-card col text-left">
-                  <i class="fa fa-snowflake-o v" aria-hidden="true"></i>
-                  <h6 style="font-size:20px">IT Transformation </h6>
-                  <p class="small">Digital transformation is crucial for all businesses. Our products enhance safety in factories and warehouses, improve road safety, and optimize supply chain<br> tracking. Whether you aim to prevent accidents, boost productivity, or ensure compliance, we got it all.</p>
-                </div>
+    </div>
+    
+      <div class="col-md-6 col-sm-12 p-0 d-flex justify-content-left">
+        <div class="card text-left" style="border:none;">
+          <div class="card-body">
+            <div class="icon-container">
+              <div class="icon-card col text-left">
+                <img src="/static/icon-3-ekak.png" style="max-width:100px">
+                <h6  style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">Renewable Energy</h6>
+                <p class="small " style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">At Ekak, we believe in the power of renewable energy to transform <br> communities and improve lives. That's why we're proud to offer a range<br>  of solar lamp and solar charging hubs with remote monitoring systems.</p>
+              </div>
+              <div class="icon-card col text-left">
+                <img src="/static/icon-2-ekak.png" style="max-width:100px;">
+                <h6 style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">3D Printing</h6>
+                <p class="small" style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">We share passion about the possibilities of 3D printing and additive<br>  manufacturing.Whether you need a one-of-a-kind prototype,a small <br> production run,or a large-scale manufacturing solution, we can help you<br>  achieve quickly, efficiently, & cost-effectively.</p>
+              </div>
+              <div class="icon-card col text-left">
+                <img src="/static/icon-1-ekak.png" style="max-width:100px">
+                <h6 style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">IT Transformation</h6>
+                <p class="small " style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">Digital transformation is crucial for all businesses.Our products enhance<br> safety infactories and warehouses, improve road safety, and <br> optimize supply chain tracking. Whether you aim to prevent accidents, boost<br>  productivity, or ensure compliance, we got it all.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
+    
 
 
 
 
-    <div class="container-fluid my-5">
-        <div class="row" style="background-image:url('/static/blurr.jpeg');background-size:cover">
-            <!-- First Column -->
-            <div class="col-md-4 text-column" style="font-family: 'Red Hat Display', sans-serif;
-            font-size: 1.25rem;margin-top:200px;color:#f0f0f0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Praesent vel dolor nec ligula cursus facilisis.</p>
-            </div>
 
-            <!-- Second Column (Cylindrical Card) -->
-            <div class="col-md-4 d-flex justify-content-center align-items-center">
-                <div class="cylindrical-card" style="
-                border-top-left-radius: 120px;
-                border-top-right-radius:120px;
-                border-bottom-left-radius: 120px;
-                border-bottom-right-radius: 120px;
-                overflow: hidden;
-                height: 450px; 
-                width: 350px; 
-                position: relative;
-                background: #f0f0f0; /* Background color */">
-                    <img src="/static/building.jpeg" alt="Cylindrical Image" style="
-                    width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;">
-                </div>
-            </div>
 
-            <!-- Third Column -->
-            <div class="col-md-4 text-column" style="font-family: 'Red Hat Display', sans-serif;
-            font-size: 1.25rem;margin-top:200px;color:white;
-            ">
-                <p>Phasellus tincidunt velit ut felis tincidunt, at elementum nunc ultricies. Donec dapibus lorem vitae est fermentum facilisis.</p>
-            </div>
+
+    <div class="card-group">
+      <div class="card" style="border: none;">
+        <img src="/static/Ekak Website5.png" class="card-img-top" alt="...">
+       
+      </div>
+      <div class="card" style="border: none;">
+        <img src="/static/Ekak Website6.png" class="card-img-top" alt="...">
+     
+      </div>
+      <div class="card" style="border: none;">
+        <img src="/static/Ekak Website7.png" class="card-img-top" alt="...">
+        
+      </div>
+    </div>
+  
+                                      <!--Approach section-->
+
+
+  
+    <div class="row" style="background-image:url('/static/Ekak website- Homepage Images.png');background-size:cover">
+      <div class="col-md-3 justify text-column pl-5" style="font-family: 'Lato', sans-serif; font-size: 1.25rem; margin-top:250px; color:#f0f0f0">
+        <p>Our approach to work is centered around<br> the idea of breaking down complex<br> problems into smaller, more manageable<br> subproblems.</p>
+      </div>
+  
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="cylindrical-card" style="border-radius: 120px; overflow: hidden; position: relative; background: transparent;">
+          <img src="/static/Ekak Website8.png" class="hover-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
         </div>
+      </div>
+  
+      <div class="col-md-3 text-column text-right pr-5" style="font-family:'Lato', sans-serif; font-size: 1.25rem; margin-top:250px; color:white;">
+        <p>This allows us to address each issue with<br> precision engineering and a data-driven,<br> cost-effective approach.</p>
+      </div>
     </div>
+  
+  
+  <style>
+    .hover-image {
+      transition: transform 0.2s ease;
+    }
+  
+    .hover-image:hover {
+      transform: scale(1.1);
+    }
+  
+    @media (min-width: 1200px) {
+      .cylindrical-card {
+        height: 600px;
+        width: 500px;
+      }
+    }
+  
+    @media (max-width: 1199.98px) {
+      .cylindrical-card {
+        height: 450px;
+        width: 350px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .cylindrical-card {
+        height: 300px;
+        width: 250px;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .cylindrical-card {
+        height: 300px;
+        width: 250px;
+      }
+    }
+  </style>
+  
 
 
+                                      <!--POsition of company section-->
 
 
-
-
-    <div class="container-fluid" style="margin-top:30px" >
-        <!-- First Row -->
+    <div class="container-fluid ml-2 mr-2" style="margin-top:30px" >
+        
         <div class="row">
             <div class="col text-left text-left-50px" >
                 <p  class="mb-0">Position your<br>company at the<br> top with ekak.</p>
             </div>
         </div>
-
-        <!-- Second Row -->
+        <style>
+        @media (max-width: 576px) {
+          .mb-0{
+              font-size: 28px; 
+               
+          }
+      }
+    </style>
+       
         <div class="row">
-            <div class="col text-left text-left-20px" >
-                <p  class="mb-0">Optimize your business with this us, designed to boost<br> your brand, streamline operations, and secure a top-tier <br>industry position for lasting success.</p>
+            <div class="col text-left pt-5 text-left-20px" >
+                <p  class=" text1 mb-0">Optimize your business with this us, designed to boost<br> your brand, streamline operations, and secure a top-tier <br>industry position for lasting success.</p>
             </div>
         </div>
-
-        <!-- Third Row -->
+        <style>
+        @media (max-width: 576px) {
+          .text1{
+              font-size: 18px; 
+               
+          }
+      }</style>
+       
         <div class="row">
             <div class="col text-right text-right-100px">
                 <p  class="mb-0">*6 years</p>
             </div>
         </div>
 
-        <!-- Fourth Row -->
+        
         <div class="row">
             <div class="col">
                 <hr>
             </div>
             <div class="col text-right text-right-24px" >
-                <p  class="mb-0">Optimizing businesses, Optimizing world.</p>
+                <p  class=" text1 mb-0">Optimizing businesses, Optimizing world.</p>
             </div>
-        </div>
+        </div><style>
+          @media (max-width: 576px) {
+            .text1{
+                font-size: 18px; 
+                 
+            }
+        }</style>
     </div>
 
-    <div class="container-fluid" style="margin-top:30px">
-        <div class="row">
-            
 
-               
-            <div class="col-md-4 mb-2">   
+                                      <!--BLog Section-->
 
-                <div class="card cylindrical-card">
-                    <img src="/static/building.jpeg" alt="Image 1" class="card-img-top">
-                    
-                </div>
-                <div class="card-body">
-                        <h5 class="card-title">EKAK BLOG #1</h5>
-                        <p class="card-text">Optimize your business with this us, designed to boost your brand, streamline operations.</p>
-                </div>
-            </div>
-        
-            <div class="col-md-4 mb-4">   
-
-                <div class="card cylindrical-card">
-                    <img src="/static/building.jpeg" alt="Image 1" class="card-img-top"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">EKAK BLOG #1</h5>
-                        <p class="card-text">Optimize your business with this us, designed to boost your brand, streamline operations.</p>
-                    </div>
-                </div>
+    <div class="container-fluid p-0 m-0" style="margin-top:30px">
+      <div class="row">
+          <div class="col-md-4 mb-2">
+              <div class="card cylindrical-card">
+                  <img src="/static/Ekak Website9.png" class="card-img-top">
+              </div>
+              <div class="card-body" style="padding-top: 5px;">
+                  <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;text-align: left;">EKAK BLOG #1</h5>
+                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations. </p>
+              </div>
+          </div>
           
-            <div class="col-md-4 mb-4">   
-
-                <div class="card cylindrical-card">
-                    <img src="/static/building.jpeg" alt="Image 1" class="card-img-top"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">EKAK BLOG #1</h5>
-                        <p class="card-text">Optimize your business with this us, designed to boost your brand, streamline operations.</p>
-                    </div>
-                </div>
-           
-        </div>
-    </div>
+          <div class="col-md-4 mb-2">
+              <div class="card cylindrical-card">
+                  <img src="/static/Ekak Website10.png" class="card-img-top">
+              </div>
+              <div class="card-body" style="padding-top: 5px;">
+                  <h5 class="card-title " style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #2</h5>
+                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations.</p>
+              </div>
+          </div>
+          
+          <div class="col-md-4 mb-2">
+              <div class="card cylindrical-card">
+                  <img src="/static/Ekak Website11.png" class="card-img-top">
+              </div>
+              <div class="card-body" style="padding-top: 5px;">
+                  <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #3</h5>
+                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
 
     <div class="container-fluid" style="margin-top:30px">
-        <div class="row">
-            <div class="col-md-12 testimonial-container">
-                <i style="font-size:24px" class="fa">&#xf10d;</i>
-                <p class="testimonial" >Amazing collaboration features. My files load extremely fast and I'm able to organize and plan effectively without tech holding us back.</p>
-                <p class="author">- Ms. Abd, XYC firm</p>
-                <div class="logos">
-                    <img src="/static/ounce.jpeg" class="logo img-fluid" style="max-width: 200px;">
-                    <img src="/static/truboard.png" class="logo img-fluid" style="max-width:200px" >
-                    <img src="/static/gesl.jpeg" class="logo img-fluid" style="max-width: 200px;">
-                    <img src="/static/sagar.jpeg" class="logo img-fluid" style="max-width: 200px;">
+      <div class="row">
+          <div class="col-md-12 testimonial-container text-center">
+              <img src="/static/Ekak Website12.png" style="max-width: 160px;" class="mx-auto d-block hover-effect">
+              <style>
+                .hover-effect {
+                  transition: transform 0.3s ease; 
+                }
+                
+                .hover-effect:hover {
+                  transform: scale(1.2); 
+                }
+              </style>
+              <p class="testimonial">
+                  <i>Amazing collaboration features. My files load extremely fast and I'm able to organize and<br> plan effectively without tech holding us back.</i>
+              </p>
+              <p class="author">- Ms. Abd, XYC firm</p>
+              <div class="container-fluid">
+                <div class="row" style="margin-top:200px">
+                    <div class="col-12 ">
+                        <div class="card-group">
+                            <div class="card pl-5 ml-5" style="border: none;">
+                                <img src="/static/Ekak Website13.png" class="img-fluid" style="max-width: 230px; width: 100%;">
+                            </div>
+                            <div class="card" style="border: none;">
+                                <img src="/static/Truboarddddd.png" class="img-fluid" style="max-width: 350px; width: 100%;">
+                            </div>
+                            <div class="card pl-5 ml-5" style="border: none;">
+                                <img src="/static/Ekak Website15.png" class="img-fluid" style="max-width: 230px; width: 100%;">
+                            </div>
+                            <div class="card pl-5 ml-5" style="border: none;">
+                                <img src="/static/Ekak Website16.png" class="img-fluid" style="max-width: 230px; width: 100%;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-    <header class=" text-light" style="background-color:#0D6667">
-        <div class="container-fluid">   
-
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1 style="font-size: 1rem;">Sign up to get latest update, promotions and many more.</h1>
-                    <form style="margin-top:50px">
-                        <input type="email" placeholder="Enter your email address">
-                        <button type="submit" class="btn btn-primary">SIGN UP</button>
-                    </form>
-                    <p class="small">By signing up you agree that your data will be collected and used subject to our policy.</p>
-                </div>
-                <div class="col-md-6 text-end" >
-                    <ul class="nav justify-content-end" >
-                        <li class="nav-item" ><a class="nav-link" href="/about" style="font-size:18px;color:white;">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Value</a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="/blog" style="font-size:18px;color:white;">Blogs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Work</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Career</a></li> 
-
-                        <li class="nav-item"><a class="nav-link" href="/contact" style="font-size:18px;color:white;" >Contact</a></li>
-                    </ul>
-                </div>
-            </div> 
-
             
+            
+          </div>
+      </div>
+  </div>
+  
 
-        </div>
-    </header>
-    <footer class="footer">
-        <div class="container-fluid position-relative">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="bottom-left-text">ekak.</p>
-                </div>
-                <div class="col-md-6 contact-column">
-                    <h4>Contact Us</h4>
-                    
-                    <ul class="contact-icons">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
 
+
+{% include 'base_footer.html' %}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
     <!-- Optional JavaScript -->
