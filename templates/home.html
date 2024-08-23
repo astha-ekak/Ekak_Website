@@ -8,11 +8,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap" rel="stylesheet">
      
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+       
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
       
-   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,39 +23,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <style>
-      *{padding:0;
-        margin:0;
+   
+#navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
 
-      }
-        .navbar-light .navbar-nav .nav-link {
-            color: white;
-          }
-          .navbar-light .navbar-brand {
-            color: white;
-          }
-          .navbar-light .nav-link.active {
-            color: white !important;
-          }
-          .navbar-light .nav-link.dropdown-toggle::after {
-            color: white;
-          }
-          .navbar-nav .nav-item {
-            margin-right: 100px; 
-          }
-          .font-roboto {
-              font-family: 'Roboto', sans-serif;
-            }
-            .font-montserrat {
-              font-family: 'Montserrat', sans-serif;
-            }
-            .font-pacifico {
-              font-family: 'Pacifico', cursive;
-            }
-            .navbar-brand img {
-             
-              margin-right: 0%;
-              margin-left:0%; 
-            }
+
+#navbar.scrolled {
+  background-color: #158d91;
+  transition: background-color 0.2s ease;
+}
+
+       
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+
+
+.navbar-light .navbar-brand {
+  color: black;
+  transition: color 0.5s ease;
+}
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+#navbar.scrolled .navbar-brand {
+  color: white;
+}
+.navbar-nav .nav-item {
+  margin-right: 30px;  
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px; 
+  }
+}
+
+
       .column {
         height: 450px;
         border: px solid black; 
@@ -82,15 +98,24 @@
       }
       .icon-card {
         width: 100%; 
-        margin-bottom: 20px;
+       padding:10px;
         text-align: center;
       }
       .icon-card i {
         font-size: 50px; 
         color: #333;
       }
-      .icon-card h6 {
-        margin: 10px 0 5px;
+      h6{
+      
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+      }
+      .small{
+
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
       }
 
 
@@ -99,7 +124,7 @@
         border-radius: 200px;
         width:60%;
         height:500px;
-        margin:50px;
+       
        
         
     }
@@ -114,10 +139,10 @@
         object-fit: cover;
        
     }
-    .card-body{
-        padding:10px;
-        margin:40px;
-    }
+    
+
+
+
 
 
     .testimonial-container {
@@ -154,31 +179,31 @@
     
     .responsive-section {
         font-size: 40px;
-        margin-left: 30px;
+        margin-left: 95px;
     }
    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Glacial+Indifference:wght@400;700&family=Lato:wght@400;700&display=swap');
    
    
    .text-left-50px {
     font-size: 3rem; 
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold;
-    margin-left:20px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    margin-left:60px;
     padding:10px;
 }
 
 .text-left-20px {
-    font-size: 1.375rem; 
+    font-size: 1rem; 
     font-family: 'Red Hat Display', sans-serif;
-    margin-left:20px;
+    margin-left:60px;
     padding:10px;
 }
 
 .text-right-100px {
-    font-size: 6.25rem; 
+    font-size: 8.5rem; 
     font-family: 'Glacial Indifference', sans-serif;
     font-weight: bold;
-    margin-right:20px;
+    margin-right:70px;
     padding:10px;
    
 }
@@ -186,9 +211,37 @@
 .text-right-24px {
     font-size: 1.1875rem; 
     font-family: 'Lato', sans-serif;
-    margin-right:20px;
+    margin-right:70px;
     padding:10px;
 }
+@media (max-width:768px){
+  .text-left-50px{
+   
+    margin:0;
+  }
+}
+@media (max-width:768px){
+  .text-left-20px{
+    
+    margin:0;
+  }
+}
+@media (max-width:576px){
+  .text-right-100px{
+   
+   padding:0;
+    margin:0;
+  }
+}
+@media (max-width:768px){
+  .text-right-24px{
+    padding:0;
+    margin:0;
+  }
+}
+
+
+
 
 @media (max-width: 768px) {
         .responsive-section {
@@ -203,6 +256,12 @@
         }
     }
     
+
+    @import url('https://your-font-host.com/gilroy.css'); 
+
+
+
+
 
     
     .footer {
@@ -240,11 +299,44 @@
     <title>Ekak Website</title>
   </head>
   <body>
-  {% include 'base_header.html' %}
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img id="navbar-logo" src="/static/Ekak logo mark without colour version.png" width="100px" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto pl-5 ml-5">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog" >Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/teams" >Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/career">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline ml-auto">
+          <button class="btn btn-dark my-2 my-sm-0" type="submit">Get Started</button>
+        </form>
+      </div>
+    </nav>
 
-    <div class="container-fluid " style="margin-top:220px;">
-      <div class="row justify-content-start" >
-        <div class="col-md-6 col-12">
+   
+      <div class="row justify-content-start" style="margin-top:220px;" >
+        <div class="col-md-10 col-12 ">
             <div class="row">
                 <div class="col-md-6 pl-5 col-12 d-flex justify-content-center align-items-center my-2 font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
                     <p class="head-text" style="white-space: nowrap;">
@@ -252,13 +344,13 @@
                     </p>
                 </div>
                 
-                <div class="col-md-4 pl-4 col-12 d-flex justify-content-center align-items-center my-2 p-2">
+                <div class="col-md-4  col-12 d-flex my-1">
                     <img src="/static/Ekak Website 1.gif" alt="GIF" class="img-fluid">
                 </div>
                 
-                <div class="col-md-2 col-12 pl-4 d-flex justify-content-center align-items-center my-2  font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
+                <div class="col-md-2 col-12 d-flex justify-content-center align-items-center my-2  font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
                     <p class="head-text" style=" white-space: nowrap; margin: 0;">
-                        Work
+                        work
                     </p>
                 </div>
             </div>
@@ -293,36 +385,28 @@
                      font-size: 45px;
                      font-weight:600;
                      font-family:century-gothic,sans-serif;
+                    
                  }
              }
 </style>
     
 
-  
-      <section class="row pt-5 mt-5">
-        <div class="col text-md-right text-center my-2" style="font-size: 1.4rem; font-size: calc(1.4rem + 0.5vw); margin-right: 20px;">
-            <p>
-                Optimize your business with <br> this template, <span style="color:#FF914D">designed</span> to <br> boost your brand, streamline.
-            </p>
-        </div>
-    </section>
     
-    </div>
-
 
    
         <section class="row " style="margin-top:150px;">
             <div class="col text-left responsive-section">
                 <p class="responsive-text" >
-                    Ekak Innovations is a product development <br>firm dedicated to creating <span style="color:#FF914D">innovative</span> solutions<br> for today's most pressing challenges.
+                    Ekak Innovations is a product development <br>firm dedicated to creating <span  style="color:#FF914D;">innovative</span> solutions<br> for today's most pressing challenges.
                 </p>
             </div>
         </section>
 
         <style>
-          .responsive-text{
-            font-family: 'Red Hat Display', sans-serif;
+       .responsive-text{
+        font-family: "Poppins", sans-serif;
             font-size:50px;
+            
 
           }
              @media (max-width: 1200px) {
@@ -345,42 +429,42 @@
          
              @media (max-width: 576px) {
                  .responsive-text {
-                     font-size: 17px;
+                     font-size: 26px;
                      font-weight:600;
-                     font-family:century-gothic,sans-serif;
+                
                  }
              }
         </style>
    
 
     <div class="row align-items-center">
-      <div class="col-md-6 col-sm-12 mt-2 d-flex justify-content-center">
+      <div class="col-md-6 mt-5 pt-5 col-sm-12 mt-2 d-flex justify-content-center">
         <div class="card" style="border:none;">
-            <img src="/static/Portraits.png" class="card-img-top img-fluid" alt="Card Image" style="border-top-left-radius: 70px;
-                border-top-right-radius: 70px;
-                border-bottom-left-radius: 70px;
-                border-bottom-right-radius: 70px; width: 100%; height: auto; max-width: 100%; max-height: 60vh;">
+            <img src="/static/Homepage ekak website.png" class="card-img-top img-fluid" alt="Card Image" style="border-top-left-radius: 60px;
+                border-top-right-radius: 60px;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px; max-width: 100%; max-height: 85vh;">
         </div>
     </div>
     
-      <div class="col-md-6 col-sm-12 p-0 d-flex justify-content-left">
+      <div class="col-md-6 pt-5 mt-5 col-sm-12 p-0 d-flex justify-content-left">
         <div class="card text-left" style="border:none;">
           <div class="card-body">
             <div class="icon-container">
               <div class="icon-card col text-left">
-                <img src="/static/icon-3-ekak.png" style="max-width:100px">
-                <h6  style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">Renewable Energy</h6>
-                <p class="small " style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">At Ekak, we believe in the power of renewable energy to transform <br> communities and improve lives. That's why we're proud to offer a range<br>  of solar lamp and solar charging hubs with remote monitoring systems.</p>
+                <img src="/static/Untitled design.png" style="max-width:80px">
+                <h6  class="pt-2" style="font-size:24px;">Renewable Energy</h6>
+                <p class="small mt-4" style="font-size:15px">At Ekak, we believe in the power of renewable energy to transform <br> communities and improve lives. That's why we're proud to offer a range<br>  of solar lamp and solar charging hubs with remote monitoring systems.</p>
               </div>
               <div class="icon-card col text-left">
-                <img src="/static/icon-2-ekak.png" style="max-width:100px;">
-                <h6 style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">3D Printing</h6>
-                <p class="small" style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">We share passion about the possibilities of 3D printing and additive<br>  manufacturing.Whether you need a one-of-a-kind prototype,a small <br> production run,or a large-scale manufacturing solution, we can help you<br>  achieve quickly, efficiently, & cost-effectively.</p>
+                <img src="/static/Untitled design 11.png" style="max-width:80px;">
+                <h6 class="pt-2" style="font-size:24px;">3D Printing</h6>
+                <p class="small mt-4" style="font-size:15px">We share passion about the possibilities of 3D printing and additive<br>  manufacturing.Whether you need a one-of-a-kind prototype,a small <br> production run,or a large-scale manufacturing solution, we can help you<br>  achieve quickly, efficiently, & cost-effectively.</p>
               </div>
               <div class="icon-card col text-left">
-                <img src="/static/icon-1-ekak.png" style="max-width:100px">
-                <h6 style="font-size:24px; font-family: 'Red Hat Display', sans-serif;">IT Transformation</h6>
-                <p class="small " style="font-family: 'Red Hat Display', sans-serif;word-spacing:2px;font-size:17px">Digital transformation is crucial for all businesses.Our products enhance<br> safety infactories and warehouses, improve road safety, and <br> optimize supply chain tracking. Whether you aim to prevent accidents, boost<br>  productivity, or ensure compliance, we got it all.</p>
+                <img src="/static/Untitled design 22.png" style="max-width:80px">
+                <h6 class="pt-2" style="font-size:24px;">Digital Transformation</h6>
+                <p class="small mt-4 " style="font-size:15px">Digital transformation is crucial for all businesses.Our products enhance<br> safety infactories and warehouses, improve road safety, and  optimize<br> supply chain tracking. Whether you aim to prevent accidents, boost<br>  productivity, or ensure compliance, we got it all.</p>
               </div>
             </div>
           </div>
@@ -397,89 +481,104 @@
 
 
     <div class="card-group">
-      <div class="card" style="border: none;">
-        <img src="/static/Ekak Website5.png" class="card-img-top" alt="...">
+      <div class="card" style="border: none;margin:0;padding:0;">
+        <img src="/static/Homepage Award  (1) 1.png" class="card-img-top p-4 pt-0">
+       
+      </div>
+      <div class="card p-0 m-0" style="border: none;">
+        <img src="/static/Homepage Award 2 (1) 1.png" class="card-img-top p-3">
        
       </div>
       <div class="card" style="border: none;">
-        <img src="/static/Ekak Website6.png" class="card-img-top" alt="...">
+        <img src="/static/Homepage Award 3 (1) 1.png" class="card-img-top p-3">
      
       </div>
       <div class="card" style="border: none;">
-        <img src="/static/Ekak Website7.png" class="card-img-top" alt="...">
+        <img src="/static/Homepage Award 4.png" class="card-img-top p-5 pt-4">
         
       </div>
     </div>
   
                                       <!--Approach section-->
+                                     
 
 
-  
-    <div class="row" style="background-image:url('/static/Ekak website- Homepage Images.png');background-size:cover">
-      <div class="col-md-3 justify text-column pl-5" style="font-family: 'Lato', sans-serif; font-size: 1.25rem; margin-top:250px; color:#f0f0f0">
-        <p>Our approach to work is centered around<br> the idea of breaking down complex<br> problems into smaller, more manageable<br> subproblems.</p>
-      </div>
-  
-      <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <div class="cylindrical-card" style="border-radius: 120px; overflow: hidden; position: relative; background: transparent;">
-          <img src="/static/Ekak Website8.png" class="hover-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
-        </div>
-      </div>
-  
-      <div class="col-md-3 text-column text-right pr-5" style="font-family:'Lato', sans-serif; font-size: 1.25rem; margin-top:250px; color:white;">
-        <p>This allows us to address each issue with<br> precision engineering and a data-driven,<br> cost-effective approach.</p>
-      </div>
-    </div>
-  
-  
-  <style>
-    .hover-image {
-      transition: transform 0.2s ease;
-    }
-  
-    .hover-image:hover {
-      transform: scale(1.1);
-    }
-  
-    @media (min-width: 1200px) {
-      .cylindrical-card {
-        height: 600px;
-        width: 500px;
-      }
-    }
-  
-    @media (max-width: 1199.98px) {
-      .cylindrical-card {
-        height: 450px;
-        width: 350px;
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .cylindrical-card {
-        height: 300px;
-        width: 250px;
-      }
-    }
-  
-    @media (max-width: 576px) {
-      .cylindrical-card {
-        height: 300px;
-        width: 250px;
-      }
-    }
-  </style>
-  
+                                      <div class="row" style="background-image:url('/static/Ekak website- Homepage Images.png');background-size:cover">
+                                        <div class="col-md-4 text-column pl-md-5 text-center text-md-left d-flex justify-content-center align-items-center" style="font-family: 'Lato', sans-serif;color:#f0f0f0;">
+                                          <p>We break down complex problems into<br> smaller, manageable subproblems for<br> effective solutions.</p>
+                                        </div>
+                                      
+                                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                          <div class="cylindrical-card" style="border-radius: 120px; overflow: hidden; position: relative; background: transparent;">
+                                            <img src="/static/Ekak Website8.png" class="hover-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="col-md-4 text-column pr-md-4 text-center text-md-right d-flex justify-content-center align-items-center" style="font-family: 'Lato', sans-serif; color:#f0f0f0;">
+                                          <p>This allows us to address each issue with<br> precision engineering and a data-driven,<br> cost-effective approach.</p>
+                                        </div>
+                                      </div>
+                                      
+                                      <style>
+                                        .text-column{
+                                          font-size: 1.25rem;
+                                        }
+                                        /* Ensure cylindrical image responsiveness */
+                                        .hover-image {
+                                          transition: transform 0.2s ease;
+                                        }
+                                      
+                                        .hover-image:hover {
+                                          transform: scale(1.1);
+                                        }
+                                      
+                                        @media (min-width: 1200px) {
+                                          .cylindrical-card {
+                                            height: 600px;
+                                            width: 500px;
+                                          }
+                                        }
+                                      
+                                        @media (max-width: 1199.98px) {
+                                          .cylindrical-card {
+                                            height: 450px;
+                                            width: 350px;
+                                          }
+                                        }
+                                      
+                                        @media (max-width: 768px) {
+                                          .cylindrical-card {
+                                            height: 300px;
+                                            width: 250px;
+                                          }
+                                        }
+                                      
+                                        @media (max-width: 576px) {
+                                          .cylindrical-card {
+                                            height: 300px;
+                                            width: 250px;
+                                          }
+                                        }
+
+                                        @media (max-width: 576px) {
+                                          .text-column {
+                                            font-size:1rem;
+                                            margin-top:30px;
+                                            margin-bottom:20px;
+                                          }
+                                        }
+                                      </style>
+                                      
 
 
                                       <!--POsition of company section-->
 
 
-    <div class="container-fluid ml-2 mr-2" style="margin-top:30px" >
+    <div class="container-fluid ml-2 mr-2" style="margin-top:100px" >
         
         <div class="row">
             <div class="col text-left text-left-50px" >
-                <p  class="mb-0">Position your<br>company at the<br> top with ekak.</p>
+                <p  class="mb-0 ">Where Innovations <br>meets Sustainability</p>
             </div>
         </div>
         <style>
@@ -493,20 +592,20 @@
        
         <div class="row">
             <div class="col text-left pt-5 text-left-20px" >
-                <p  class=" text1 mb-0">Optimize your business with this us, designed to boost<br> your brand, streamline operations, and secure a top-tier <br>industry position for lasting success.</p>
+                <p  class=" text1 mb-0 "> It emphasizes the integration of<br> cutting-edge technology, pioneering<br> business paradigms, and strategies<br>  centred around customer satisfaction.  </p>
             </div>
         </div>
         <style>
         @media (max-width: 576px) {
           .text1{
-              font-size: 18px; 
+              font-size: 15px; 
                
           }
       }</style>
        
         <div class="row">
             <div class="col text-right text-right-100px">
-                <p  class="mb-0">*6 years</p>
+                <p  class=" text3 mb-0 pr-5 pt-5">*6 years</p>
             </div>
         </div>
 
@@ -516,55 +615,129 @@
                 <hr>
             </div>
             <div class="col text-right text-right-24px" >
-                <p  class=" text1 mb-0">Optimizing businesses, Optimizing world.</p>
+                <p  class=" text2 mb-0 pr-5 pt-2">Optimizing businesses, Optimizing world.</p>
             </div>
         </div><style>
           @media (max-width: 576px) {
-            .text1{
-                font-size: 18px; 
+            .text2{
+                font-size: 10px; 
                  
             }
-        }</style>
+        }
+        @media (max-width: 576px) {
+            .text3{
+                font-size: 60px; 
+                 
+            }
+        }
+        </style>
     </div>
 
 
                                       <!--BLog Section-->
 
-    <div class="container-fluid p-0 m-0" style="margin-top:30px">
+    <!-- <div class="container-fluid p-0 m-0" style="margin-top:30px">
       <div class="row">
-          <div class="col-md-4 mb-2">
+          <div class="col-md-4 mb-2 pl-5">
               <div class="card cylindrical-card">
-                  <img src="/static/Ekak Website9.png" class="card-img-top">
+                  <img src="/static/Ekak Website10.png" class="card-img-top">
               </div>
-              <div class="card-body" style="padding-top: 5px;">
+              <div class="card-body" style="padding-top: 3px;">
                   <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;text-align: left;">EKAK BLOG #1</h5>
                   <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations. </p>
               </div>
           </div>
           
-          <div class="col-md-4 mb-2">
+          <div class="col-md-4 mb-2 pl-5">
               <div class="card cylindrical-card">
                   <img src="/static/Ekak Website10.png" class="card-img-top">
               </div>
-              <div class="card-body" style="padding-top: 5px;">
+              <div class="card-body" style="padding-top: 3px;">
                   <h5 class="card-title " style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #2</h5>
                   <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations.</p>
               </div>
           </div>
           
-          <div class="col-md-4 mb-2">
+          <div class="col-md-4 mb-2 pl-5">
               <div class="card cylindrical-card">
                   <img src="/static/Ekak Website11.png" class="card-img-top">
               </div>
-              <div class="card-body" style="padding-top: 5px;">
+              <div class="card-body" style="padding-top: 3px;">
                   <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #3</h5>
                   <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations</p>
               </div>
           </div>
       </div>
   </div>
-  
+   -->
 
+
+
+
+
+   <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4 mb-5">
+        <div class="cylindrical-image-container">
+          <img src="/static/Ekak Website9.png" alt="Image 1" class="img-fluid cylindrical-image">
+        </div>
+        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
+        <p class="text-left mt-2 ml-4" style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="cylindrical-image-container">
+          <img src="/static/Ekak Website10.png" alt="Image 2" class="img-fluid cylindrical-image">
+        </div>
+        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
+        <p class="text-left mt-2  ml-4" style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="cylindrical-image-container">
+          <img src="/static/Ekak Website11.png" alt="Image 3" class="img-fluid cylindrical-image">
+        </div>
+        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
+        <p class="text-left mt-2  ml-4"  style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .cylindrical-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cylindrical-image {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px; 
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .cylindrical-image {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cylindrical-image {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+  </style>
+
+
+
+
+
+
+  <!--Collaborators section-->
     <div class="container-fluid" style="margin-top:30px">
       <div class="row">
           <div class="col-md-12 testimonial-container text-center">
@@ -586,16 +759,16 @@
                 <div class="row" style="margin-top:200px">
                     <div class="col-12 ">
                         <div class="card-group">
-                            <div class="card pl-5 ml-5" style="border: none;">
+                           <div class="card" style="border: none;">
                                 <img src="/static/Ekak Website13.png" class="img-fluid" style="max-width: 230px; width: 100%;">
                             </div>
                             <div class="card" style="border: none;">
                                 <img src="/static/Truboarddddd.png" class="img-fluid" style="max-width: 350px; width: 100%;">
                             </div>
-                            <div class="card pl-5 ml-5" style="border: none;">
+                            <div class="card" style="border: none;">
                                 <img src="/static/Ekak Website15.png" class="img-fluid" style="max-width: 230px; width: 100%;">
                             </div>
-                            <div class="card pl-5 ml-5" style="border: none;">
+                            <div class="card" style="border: none;">
                                 <img src="/static/Ekak Website16.png" class="img-fluid" style="max-width: 230px; width: 100%;">
                             </div>
                         </div>
@@ -608,7 +781,16 @@
       </div>
   </div>
   
-
+<style>
+  @media (max-width: 576px) {
+    .testimonial {
+      font-size: 1.2rem; /* Reduce font size on small screens */
+    }
+    .author {
+      font-size: 0.9rem; /* Reduce author font size on small screens */
+    }
+  }
+</style>
 
 
 {% include 'base_footer.html' %}
@@ -619,5 +801,38 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  
+  
+    <script>
+   
+   
+
+
+
+   
+window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("navbar");
+  var logo = document.getElementById("navbar-logo");
+
+  if (window.scrollY > 50) { 
+    navbar.classList.add("scrolled");
+   
+    logo.src = "/static/Ekak logo mark (white logo with blue inner circle).png"; 
+  } else {
+    navbar.classList.remove("scrolled");
+   
+    logo.src = "/static/Ekak logo mark without colour version.png"; 
+  }
+});
+
+    </script>
+   
+  
+
+
+
+  
+  
   </body>
 </html>

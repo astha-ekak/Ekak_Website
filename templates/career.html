@@ -14,36 +14,50 @@
    
     <style>
          
+       
+         #navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+
+#navbar.scrolled {
+  background-color: #158d91;
+  transition: background-color 0.5s ease;
+}
+
+
 .navbar-light .navbar-nav .nav-link {
-color: white;
+  color: black;
+  transition: color 0.5s ease;
 }
+
+
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+
+
 .navbar-light .navbar-brand {
-color: white;
+  color: black;
+  transition: color 0.5s ease;
 }
-.navbar-light .nav-link.active {
-color: white !important;
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
 }
-.navbar-light .nav-link.dropdown-toggle::after {
-color: white;
+#navbar.scrolled .navbar-brand {
+  color: white;
 }
 .navbar-nav .nav-item {
-margin-right: 100px;
-}
-.font-roboto {
-font-family: 'Roboto', sans-serif;
-}
-.font-montserrat {
-font-family: 'Montserrat', sans-serif;
-}
-.font-pacifico {
-font-family: 'Pacifico', cursive;
+  margin-right: 30px;  
 }
 
 
-
-
-
-           
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px; 
+  }
+} 
 
 .card {
             border-radius: 20px;
@@ -110,172 +124,227 @@ font-family: 'Pacifico', cursive;
                 font-size: 12px;
             }
         }
+
+
+       
  </style>
  </head>
  <body>
 
     {% include 'base_header.html' %}
 
-      <div class="container-fluid" style="margin-bottom:30px;margin-top:320px" >
+      <div class="container-fluid" style="margin-bottom:20px;margin-top:280px" >
         <div class="row  no-gap">
-            <div class="col d-flex justify-content-center align-items-center">
-                <p style="font-family:'Lato', sans-serif;font-size:40px;font-weight:bold">Do you have the zeal to contribute to the real world?</p>
+            <div class="col d-flex justify-content-center align-items-center pl-5">
+                <p class="text1 " style="font-family:'Lato', sans-serif;font-size:45px;font-weight:bold">Do you have the zeal to contribute to the real world?</p>
             </div>
         </div>
     
         <div class="row no-gap">
-            <div class="col d-flex justify-content-center align-items-center">
+            <div class="col text2 d-flex justify-content-center align-items-center pl-5">
                 <p>We are transforming businesses and consumer experience every day with technology.</p>
             </div>
         </div>
     
-        <div class="container-fluid my-5">
-          <div class="row" style="margin-top:150px">
-              <!-- First Card -->
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <div class="card">
-                      <img src="/static/career2.jpg" alt="Image 1">
-                  </div>
-              </div>
-              <!-- Second Card -->
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <div class="card">
-                      <div class="half-card " >
-                          <img src="/static/career7.jpg" style="height:300px; ">
-                      </div>
-                      <div class="half-card pt-1" >
-                          <img src="/static/career3.jpg" alt="Image 3" >
-                      </div>
-                  </div>
-              </div>
-              <!-- Third Card -->
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <div class="card">
-                      <img src="/static/career1.jpg" alt="Image 4">
-                  </div>
-              </div>
-              <!-- Fourth Card -->
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <div class="card">
-                      <div class="half-card">
-                          <img src="/static/career8.jpg" style="height:300px; ">
-                      </div>
-                      <div class="half-card pt-1">
-                          <img src="/static/career5.jpg" alt="Image 6">
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+       
     </div>
     
 
 
-
-
-    <div class="card text-center" style="border:none;margin-top:150px;height:300px">
-      <div class="card-body">
-          <h5 class="card-title" 
-          style="font-size:65px;font-family:'Red Hat Display', sans-serif;font-weight:600">WHY JOIN<br>US?</h5>
-          <p class="card-text  text-dark" 
-             style="display: inline-block; transform: rotate(-10deg); padding: 5px;background-color: rgb(171, 247, 247);border-radius: 50px;">
-             P.s. we have many
-          </p>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-12">
+          <img src="/static/image_1_career.png" alt="Responsive Image" class="img-fluid">
+        </div>
       </div>
-  </div>
+    </div>
+    
+    <style>
+      .img-fluid {
+        width: 100%; 
+        height: auto; 
+      }
+    
+    
+      .container-fluid {
+        padding: 0;
+      }
+    
+      .row.no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    
+      .row.no-gutters > .col-12 {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    </style>
+    
+
+
   
 
-
-      <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left:150px;margin-top:90px">
-        <div class="col">
-          <div class="card h-100" style="border:none;height:300px">
-            
-            <div class="card-body">
-              <h5 class="card-title " style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Fast Growing Company</h5>
-              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">We’re at the inflection point<br> to achieved accelerated</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="border:none;height:300px">
-           
-            <div class="card-body" >
-              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Great Colleague</h5>
-              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">Closely tied and  Supportive<br> team.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="border:none;height:300px">
-           
-            <div class="card-body">
-              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Don’t Stop Learning</h5>
-              <p class="card-text" style="font-size:19px;font-family:'Lato',sans-serif">An environment is always on<br> the to-do list</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="border:none;height:300px">
-          
-            <div class="card-body">
-              <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Free Snack  of your Choice </h5>
-              <p class="card-text"   style="font-size:19px;font-family:'Lato',sans-serif"> We know you’re are foodie at heart,<br> which is why we have free snack<br> beforehand.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card h-100" style="border:none;height:300px">
-              
-              <div class="card-body">
-                <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;"> Work-Life Balance </h5>
-                <p class="card-text"  style="font-size:19px;font-family:'Lato',sans-serif">As much as we prioritize work,<br> we never put it before life.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="border:none;height:300px"> 
-             
-              <div class="card-body">
-                <h5 class="card-title"  style="font-weight:bold;font-size:24px;font-family:'Red Hat Display', sans-serif;">Cross Domain Exposure</h5>
-                <p class="card-text"  style="font-size:19px;font-family:'Lato',sans-serif">Highly passionate & cohesive<br> team  of technology & Business<br> people</p>
-              </div>
-            </div>
-          </div>
-      </div>
-
-
-
-
-
-      <div class="container-fluid my-5 pt-5">
-        <div class="row">
-            <!-- First Card -->
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <img src="/static/career6.jpg" alt="Image 1" >
-                </div>
-            </div>
-            <!-- Second Card -->
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="half-card">
-                        <img src="/static/career9.jpg" alt="Image 2">
-                    </div>
-                    <div class="half-card pt-2">
-                        <img src="/static/career4.jpg" alt="Image 3">
-                    </div>
-                </div>
-            </div>
-            <!-- Third Card -->
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <img src="/static/career10.jpg" alt="Image 4">
-                </div>
-            </div>
-          
+    <div class="card text-center" style="border:none;height:300px">
+        <div class="card-body">
+            <h5 class="card-title card-title-large">
+                WHY JOIN<br>US?
+            </h5>
+            <p class="card-text card-text-large text-dark"
+               style="display: inline-block; transform: rotate(-10deg); padding: 5px;background-color: rgb(171, 247, 247);border-radius: 50px;">
+               P.s. we have many
+            </p>
         </div>
     </div>
     
+    <style>
+      /* Base styles */
+      .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100%; /* Ensure it takes the full height of the card */
+      }
+      
+      .card-title {
+          font-family: 'Red Hat Display', sans-serif;
+          font-weight: bold;
+      }
+      
+      .card-text {
+          font-family: 'Lato', sans-serif;
+      }
+      
+      /* Text sizes */
+      .card-title-large {
+          font-size: 65px;
+      }
+      
+      .card-title-medium {
+          font-size: 22px;
+      }
+      
+      .card-text-large {
+          justify-content: left;
+          align-items: center;
+          text-align: center;
+          font-size: 17px;
+
+      }
+      
+      /* Media queries for responsive text sizes */
+      @media (max-width: 768px) {
+          .card-title-large {
+              font-size: 50px; /* Adjust as needed */
+          }
+          .card-title-medium {
+              font-size: 18px; /* Adjust as needed */
+          }
+          .card-text-large {
+              font-size: 15px; /* Adjust as needed */
+          }
+      }
+      
+      @media (max-width: 576px) {
+          .card-title-large {
+              font-size: 35px; /* Adjust as needed */
+          }
+          .card-title-medium {
+              font-size: 16px; /* Adjust as needed */
+          }
+          .card-text-large {
+              font-size: 13px; /* Adjust as needed */
+          }
+      }
+      </style>
+      
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-3 px-md-4" style="margin-top:90px;">
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Fast Growing Company</h5>
+                      <p class="card-text card-text-large">We’re at the inflection point<br>to achieve accelerated growth.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Great Colleague</h5>
+                      <p class="card-text card-text-large">Closely tied and supportive<br>team.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Don’t Stop Learning</h5>
+                      <p class="card-text card-text-large">An environment that encourages<br>continuous learning.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Free Snacks of Your Choice</h5>
+                      <p class="card-text card-text-large">We know you're a foodie at heart,<br>which is why we offer free snacks.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Work-Life Balance</h5>
+                      <p class="card-text card-text-large">We prioritize work, but never put<br>it before life.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100" style="border:none;">
+                  <div class="card-body">
+                      <h5 class="card-title card-title-medium">Cross Domain Exposure</h5>
+                      <p class="card-text card-text-large">A highly passionate team of<br>technology and business experts.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+
+
+
+
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <img src="/static/image_2_career.png" alt="Responsive Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .img-fluid {
+          width: 100%; 
+          height: auto; 
+        }
+      
+      
+        .container-fluid {
+          padding: 0;
+        }
+      
+        .row.no-gutters {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      
+        .row.no-gutters > .col-12 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      </style>
 
 
 
@@ -301,7 +370,7 @@ font-family: 'Pacifico', cursive;
       </div>
   </div>
 
-   
+  {% include 'base_footer.html' %}
  </body>
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
@@ -311,6 +380,34 @@ font-family: 'Pacifico', cursive;
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    {% include 'base_footer.html' %}
+
+    
+
+    <script>
+   
+   
+
+
+
+   
+      window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("navbar-logo");
+      
+        if (window.scrollY > 50) { 
+          navbar.classList.add("scrolled");
+         
+          logo.src = "/static/Ekak logo mark (white logo with blue inner circle).png"; 
+        } else {
+          navbar.classList.remove("scrolled");
+         
+          logo.src = "/static/Ekak logo mark without colour version.png"; 
+        }
+      });
+      
+          </script>
+         
+          
+    
 </body>
 </html>

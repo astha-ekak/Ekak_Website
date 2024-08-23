@@ -12,34 +12,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <style>
-        .navbar-light .navbar-nav .nav-link {
-            color: white;
-          }
-          .navbar-light .navbar-brand {
-            color: white;
-          }
-          .navbar-light .nav-link.active {
-            color: white !important;
-          }
-          .navbar-light .nav-link.dropdown-toggle::after {
-            color: white;
-          }
-          .navbar-nav .nav-item {
-            margin-right: 100px; 
-          }
-          .font-roboto {
-              font-family: 'Roboto', sans-serif;
-            }
-            .font-montserrat {
-              font-family: 'Montserrat', sans-serif;
-            }
-            .font-pacifico {
-              font-family: 'Pacifico', cursive;
-            }
-            .navbar-brand img {
-              height: 130px; 
-              margin-right: 10px; 
-            }
+             
+#navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+
+#navbar.scrolled {
+  background-color: #158d91;
+  transition: background-color 0.5s ease;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+
+
+.navbar-light .navbar-brand {
+  color: black;
+  transition: color 0.5s ease;
+}
+#navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+#navbar.scrolled .navbar-brand {
+  color: white;
+}
+.navbar-nav .nav-item {
+  margin-right: 30px;  
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px; 
+  }
+}
 
             .underline {
               border-bottom: 2px solid black;
@@ -147,9 +163,9 @@
   </head>
   <body>
     {% include 'base_header.html' %}
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 pt-5">
       <!-- Heading Row -->
-      <div class="row" style="padding: 20px 15px;">
+      <div class="row" style="padding:30px 20px;">
         <div class="col-12">
           <h2 style="
             border-bottom: 2px solid black;
@@ -390,5 +406,35 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  
+  
+    <script>
+   
+   
+
+
+
+   
+      window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("navbar-logo");
+      
+        if (window.scrollY > 50) { 
+          navbar.classList.add("scrolled");
+         
+          logo.src = "/static/Ekak logo mark (white logo with blue inner circle).png"; 
+        } else {
+          navbar.classList.remove("scrolled");
+         
+          logo.src = "/static/Ekak logo mark without colour version.png"; 
+        }
+      });
+      
+          </script>
+         
+          
+        
+        
+        
+        </body>
 </html>
