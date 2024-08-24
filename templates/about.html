@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <style>
-       
+       *{
+        margin:0;
+        padding:0;
+       }
 #navbar {
   background-color: transparent;
   transition: background-color 0.5s ease;
@@ -61,7 +64,7 @@
 position: relative;
 width: 100%;
 height: 100vh;
-background: url('/static/ekak\ website.png') no-repeat center center/cover;
+background: url('/static/about_hero_page.png') no-repeat center center/cover;
 }
 .overlay-text {
 position: absolute;
@@ -73,10 +76,11 @@ text-align: center;
 width: 100%;
 font-size: 3.9rem;
 font-family: 'Lato', sans-serif;
+font-weight: 600;
 }
 @media (max-width: 767px) {
 .overlay-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 }
 @media (max-width: 767px) {
@@ -95,135 +99,7 @@ font-family: 'Lato', sans-serif;
      
       
 
-      .cylindrical-card {
-        border:none;
-        border-radius: 200px;
-        width:70%;
-        height:580px;
-        margin:50px;
-       
-        
-    }
-    
-    .card-img-top {
-        border-top-left-radius: 140px;
-        border-top-right-radius:140px;
-        border-bottom-left-radius: 140px;
-        border-bottom-right-radius: 140px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-       
-    }
-    .card-body{
-        padding:10px;
-        margin:40px;
-    }
-
-
-    
-
-
-    .logo {
-        margin: 20px;
-        max-width: 100px;
-        flex: 1 1 auto;
-    }
-    
-    
-    
-   @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Glacial+Indifference:wght@400;700&family=Lato:wght@400;700&display=swap');
    
-.text-left-50px {
-    font-size: 3rem; 
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold;
-}
-
-.text-left-20px {
-    font-size: 1.375rem; 
-    font-family: 'Lato', sans-serif;
-}
-
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-    .text-left-50px {
-        font-size: 2.5rem; 
-    }
-
-    .text-left-20px {
-        font-size: 1.2rem; 
-    }
-}
-
-@media (max-width: 576px) {
-    .text-left-50px {
-        font-size: 2rem; /* Further reduced font size for extra small screens */
-    }
-
-    .text-left-20px {
-        font-size: 1rem; /* Further reduced font size for extra small screens */
-    }
-}
-
-
-.text-right-100px {
-    font-size: 4.25rem; 
-    font-family: 'Glacial Indifference', sans-serif;
-    font-weight: bold;
-}
-
-.text-right-24px {
-    font-size: 3rem; 
-    font-family: 'Lato', sans-serif;
-}
-
-
-
-    .footer {
-        background-color: #0D6667;
-        color: white;
-        padding: 20px 0;
-    }
-
-    .footer .bottom-left-text {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        font-size: 1rem;
-    }
-
-    .footer .contact-column {
-        text-align: right;
-    }
-
-    .footer .contact-column h4,
-    .footer .contact-column p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer .contact-icons {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-    }
-
-    .footer .contact-icons li a {
-        color: white;
-        font-size: 1.5rem;
-    }
-  
-
-
-    
-
-
 
     
     </style>
@@ -242,64 +118,121 @@ font-family: 'Lato', sans-serif;
    
     
 
-    
 
-
-
-
-   
-       
-    <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col text-left text-left-50px" >
-                  <p  class="mb-0 ">We innovate for better<br> lives.</p>
-                </div>
-            </div>
-
-    
-            <div class="row">
-              <div class="col text-left text-left-20px" >
-                  <p  class="mb-0 ">Founded by Mr. Shashank Misra, Ekak was born out of the<br>  thirst for a challenge and a vision for environmentally and<br> social sustainable business..</p>
-              </div>
-            </div>
-    
-        </div>
-
-
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col d-flex justify-content-end">
-                <!-- Replace the card with an image element -->
-                <img src="/static/Ekak Definition.png"  style="width: 18rem;">
-            </div>
-        </div>
-            <div class="row">
-                <div class="col text-right text-right-24px pr-4" >
-                  <p  class="mb-0">MAY </p>
-                </div>
-            </div>
-   
-            <div class="row">
-                <div class="col text-right text-right-100px pr-4">
-                    <p  class="mb-0">2018</p>
-                </div>
-            </div>
-
-   
-            <div class="row">
-                <div class="col">
-                    <hr>
-                </div>
-                <div class="col text-right text-right-18px pr-4" style="font-family: 'Red Hat Display', sans-serif;font-size:1rem">
-                    <p  class="mb-0">Ekak was born</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-1"></div>
+  <!--Second section-->
+  <div class="container-fluid my-5">
+    <div class="row equal-height-columns">
+        <!-- First Column -->
+        <div class="col-md-8 col-sm-12 column-content ml-4" style="border: none;">
+          <!-- Two rows of text -->
+          <div class="column-text" style="text-align: left;">
+              <h2 >We innovate for better<br> lives.</h2>
+          </div>
+          <div class="column-text pt-4" style="text-align: left;">
+              <p class="sub-heading" >Founded by Mr. Shashank Misra, Ekak was born out of the<br>  thirst for a challenge and a vision for environmentally and<br> social sustainable business.</p>
+          </div>
+      </div>
+        
+        <!-- Second Column -->
+        <div class="col-md-4 col-sm-12 column-content right-aligned " style="border:none;">
+          <!-- Four rows (one for image, three for text) -->
+          <div class="image-container">
+              <img src="/static/Ekak Definition.png" style="width: 19rem;">
+          </div>
+          <div class="column-text pr-3">
+              <p style="font-size:2.5rem;font-weight: 600;margin: 0;">May</p>
+              
+          </div>
+          <div class="column-text pr-3">
+              <p style="font-size:6.5rem;font-weight: 600;margin: 0;">2018</p>
+          </div>
+          <div class="column-text pr-3">
+              <p style="font-size:1.5rem;margin: 0;">Ekak was born.</p>
+          </div>
+      </div>
     </div>
+</div>
+<style>
+  .column-text h2 {
+    font-size: 4.5rem;
+}
+
+.sub-heading {
+    font-size: 1.7rem;
+}
+
+
+@media (max-width: 767px) {
+    .column-text h2 {
+        font-size: 1.7rem; 
+    }
+
+    .sub-heading {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+    .right-aligned {
+        text-align: right; 
+    }
+
+  .equal-height-columns {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .equal-height-columns > div {
+      display: flex;
+      flex-direction: column;
+   
+  }
+
+  .column-content {
+      flex: 1;
+
+     
+  }
+
+  .column-text {
+   font-family: 'Lato', sans-serif;
+  }
+
+  .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+  }
+
+  @media (max-width: 767.98px) {
+      .equal-height-columns {
+          flex-direction: column;
+      }
+
+      .column-content {
+          margin-bottom: 20px;
+      }
+  }
+  @media (max-width: 767px) {
+        .column-text {
+            margin-left: 10px; /* Smaller margin on mobile devices */
+        }
+    }
+
+    @media (min-width: 768px) {
+        .column-text {
+            margin-left: 20px; 
+        }
+    }
+</style>
+    
+
+
+
+
+   
    
 
 
@@ -312,20 +245,20 @@ font-family: 'Lato', sans-serif;
 
 
     
-
-    <div class="row" style="background-image:url('/static/Ekak website- Homepage Images.png');background-size:cover">
+<div class="container-fluid">
+    <div class="row" style="background-image:url('/static/Ekak\ website-\ Homepage\ Images\ hero.png');background-size:cover">
       <div class="col-md-4 text-column pl-md-5 text-center text-md-left d-flex justify-content-center align-items-center" style="font-family: 'Lato', sans-serif;color:#f0f0f0;">
-        <p>Improve the life of each customer through<br> sustainable interventions</p>
+        <p><span style="font-size:25px;font-weight: 600;">Mission<br><br></span>Improve the life of each customer through<br> sustainable interventions</p>
       </div>
     
       <div class="col-md-4 d-flex justify-content-center align-items-center">
         <div class="cylindrical-card" style="border-radius: 120px; overflow: hidden; position: relative; background: transparent;">
-          <img src="/static/Ekak Website8.png" class="hover-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+          <img src="/static/Ekak Website About Us (hover page) (1).png" class="hover-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
         </div>
       </div>
     
       <div class="col-md-4 text-column pr-md-4 text-center text-md-right d-flex justify-content-center align-items-center" style="font-family: 'Lato', sans-serif; color:#f0f0f0;">
-        <p> Make innovative technology affordable for all<br> sections of the society.</p>
+        <p><span style="font-size:25px;font-weight: 600;">Vision<br><br></span> Make innovative technology affordable for all<br> sections of the society.</p>
       </div>
     </div>
     
@@ -378,207 +311,249 @@ font-family: 'Lato', sans-serif;
         }
       }
     </style>
-    
+   </div> 
 
 
 
 
 
 
+   <!--Esteemed Clients-->
 
-<!-- 
-    <div class="container p-3 my-5">
-    
-      <div class="row mb-4">
-        <div class="col">
-          <h1 style="font-size:42px;font-family:'Red Hat Display', sans-serif;"><b><i>Values</i></b> we follow</h1>
-         
+ <div class="container image-container" style="position: relative; width: 100%; overflow: hidden; margin-top: 50px;">
+    <div class="row">
+        <!-- First Row of Images -->
+        <div class="col-6 col-md-3 position-relative">
+            <img src="/static/img1.png" class="random-image img-fluid" style="margin-bottom: 20px;">
         </div>
-      </div>
-  
-     
-      <div class="row mb-4">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <div class="image-text-container" style=" display: flex;
-      align-items: center;">
-            <img src="/static/Ekak website- Homepage Images (1).png" class="img-fluid"  style="max-width: 280px;
-      margin-right: 15px;">
-            <div>
-              <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Integrity</h1>
-              <p style="font-size:19px;font-family: 'Lato', sans-serif;">Always choose your thoughts<br> & actions based on value.</p>
-            </div>
-          </div>
+        <div class="col-6 col-md-3 position-relative d-none d-md-block"></div>
+        <div class="col-6 col-md-3 position-relative d-none d-md-block"></div>
+        <div class="col-6 col-md-3 position-relative">
+            <img src="/static/img2.png" class="random-image img-fluid" style="margin-bottom: 20px;">
         </div>
-        <div class="col-md-6">
-          <div class="image-text-container" style=" display: flex;
-      align-items: center;">
-            <img src="/static/Ekak website- Homepage Images 9.png" class="img-fluid" style="max-width: 280px;">
-            <div>
-              <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Explore</h1>
-              <p style="font-size:19px;font-family: 'Lato', sans-serif;">Always be curious to know<br> more. Never stop exploring.</p>
-            </div>
-          </div>
+
+        <!-- Centered Text Block -->
+        <div class="col-12 text-center">
+            <h1 class="responsive-heading">For years, we've been dedicated to<br> innovating and assisting</h1>
+            <p class="responsive-paragraph">our esteemed clients.</p>
         </div>
-      </div>
-       <div>
-        <hr>
-       </div>
-  
-    
-      <div class="row mb-4" style="margin-top:40px">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 d-flex align-items-right">
-          <div class="text-right mr-3">
-            <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Teamwork</h1>
-          <p style="font-size:19px;font-family: 'Lato', sans-serif;">Cultivate meaningful work and<br> relationship together</p>
-          </div>
-          <img src="/static/Ekak website- Homepage Images 10.png" class="img-fluid" style="max-width:280px;">
+
+        <!-- Second Row of Images -->
+        <div class="col-6 col-md-3 position-relative">
+            <img src="/static/img3.png" class="random-image img-fluid" style="margin-bottom: 20px;">
         </div>
-        <div class="col-md-6 d-flex align-items-right">
-          <div class="text-right mr-3">
-            <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Create Impact</h1>
-          <p style="font-size:19px;font-family: 'Lato', sans-serif;">Small gesture can have big<br>Impact. Create where it matter</p>
-          </div>
-          <img src="/static/createimpact.png" class="img-fluid" style="max-width:250px;">
+
+        <div class="col-6 col-md-3 position-relative">
+            <img src="/static/img4.png" class="random-image img-fluid" style="margin-bottom: 20px;">
         </div>
-      </div>
-    </div> -->
-  
-
-
-
-
-
-
-
-<!-- Your existing HTML structure remains the same, only CSS changes are needed -->
-<div class="container-fluid p-3 my-5">
-  <div class="row mb-4">
-      <div class="col-md-3"></div>
-      <div class="col-md-3 bordered-column">
-          <div class="image-text-container">
-              <img src="/static/Ekak website- Homepage Images (1).png" class="img-fluid" style="max-width: 280px;">
-              <div>
-                  <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Integrity</h1>
-                  <p style="font-size:19px;font-family: 'Lato', sans-serif;">Always choose your thoughts<br> & actions based on value.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3 bordered-column">
-          <div class="image-text-container">
-              <img src="/static/Ekak website- Homepage Images 9.png" class="img-fluid" style="max-width: 280px;">
-              <div>
-                  <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Explore</h1>
-                  <p style="font-size:19px;font-family: 'Lato', sans-serif;">Always be curious to know<br> more. Never stop exploring.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3"></div>
-  </div>
-
-  <div>
-      <hr>
-  </div>
-
-  <div class="row mb-4" style="margin-top:40px">
-      <div class="col-md-3"></div>
-      <div class="col-md-3 bordered-column">
-          <div class="image-text-container">
-              <img src="/static/Ekak website- Homepage Images 10.png" class="img-fluid" style="max-width:280px;">
-              <div>
-                  <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Teamwork</h1>
-                  <p style="font-size:19px;font-family: 'Lato', sans-serif;">Cultivate meaningful work and<br> relationship together</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3 bordered-column">
-          <div class="image-text-container">
-              <img src="/static/createimpact.png" class="img-fluid" style="max-width:250px;">
-              <div>
-                  <h1 style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Create Impact</h1>
-                  <p style="font-size:19px;font-family: 'Lato', sans-serif;">Small gesture can have big Impact.<br>Create where it matter</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3"></div>
-  </div>
+        <div class="col-6 col-md-3 position-relative  ml-5">
+            <img src="/static/img5.png" class="random-image img-fluid" style="margin-bottom: 20px;">
+        </div>
+    </div>
 </div>
 
-
 <style>
-.bordered-column {
-    border: 2px solid #ccc; /* Customize border color and width as needed */
-    padding: 15px; /* Add padding inside the border */
-    border-radius: 5px; /* Optional: rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.image-container {
     text-align: center;
-    margin: 5 15px; 
 }
 
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Default font size for large screens */
+.responsive-heading {
+   font-family: 'Red Hat Display', sans-serif;;
+    font-size: 3rem;
+    color: black;
+    margin-top: 20px;
+    font-weight:bold;
+}
+
+.responsive-paragraph {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Adjust font size for smaller screens */
 @media (max-width: 767.98px) {
-    .bordered-column {
-        margin: 10px 0; /* Reduce margin for smaller screens if needed */
+    .image-container img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .responsive-heading {
+        font-size: 1.6rem; /* Smaller heading size for mobile devices */
+    }
+
+    .responsive-paragraph {
+        font-size: 1rem; /* Smaller paragraph size for mobile devices */
     }
 }
 
-
-
-    .image-text-container img {
-        max-width: 100%; /* Image takes full width */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 15px; /* Space between image and text */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .responsive-heading {
+        font-size: 2.5rem; /* Medium size for tablets and smaller desktops */
     }
 
-    .d-flex {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align items */
-        text-align: center; /* Center align text */
+    .responsive-paragraph {
+        font-size: 1rem; /* Medium size for tablets */
     }
-
-    .text-right {
-        text-align: center; /* Center align text on smaller screens */
-        margin-right: 0; /* Remove right margin */
-        align-items: center;
-    }
-
-    .col-md-4, .col-md-6 {
-        flex: 0 0 100%; /* Columns take full width on small screens */
-        max-width: 100%;
-    }
-
-
+}
 </style>
 
 
 
 
-    <div class="container-fluid p-3 my-5">
-      <div class="row no-gutters">
-        <div class="col-12 col-sm-6 col-md-8 image-column mb-4 mb-md-0">
-          <img src="/static/last.png" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
-        </div>
-    
-        <div class="col-12 col-sm-6 col-md-4 text-column d-flex flex-column justify-content-center align-items-end text-md-right" >
-          <div class="mt-4 mt-md-0" style="margin-bottom: 15px;">
-            <p style="font-size: 80px; font-family: 'Red Hat Display', sans-serif; color: black;">Innovate with us</p>
-          </div>
-          <div style="margin-bottom: 15px;">
-            <p style="font-size: 24px; font-family: 'Red Hat Display', sans-serif; color: black;">Automate and simplify your business operations with<br> easy and secure solutions</p>
-          </div>
-          <div class="button-container">
-            <form class="form-inline">
-              <button class="btn btn-dark" type="submit" style="width: 12rem; background-color: black; font-size: 20px;">START TODAY</button>
-            </form>
-          </div>
-        </div>
+
+
+
+<!--Values section-->
+
+
+   <div class="container-fluid p-3 my-5">
+    <div class="row mb-4">
+      <div class="col ">
+        <h1 class="ml-5" style="font-size:42px;font-family:'Red Hat Display', sans-serif;"><b><i>Values</i></b> we follow</h1>
+       
       </div>
     </div>
-    
+    <div class="row mb-4">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 bordered-column">
+            <div class="image-text-container">
+                <img src="/static/About Us Page Value 1 (1).png" class="img-fluid" style="max-width: 250px;">
+                <div>
+                    <h1 class="text-left ml-5 pr-5" style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Integrity</h1>
+                    <p class="text-left ml-5" style="font-size:15px;font-family: 'Lato', sans-serif;">Always choose your thoughts<br> & actions based on value.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 bordered-column mt-2 pl-4 pt-3">
+            <div class="image-text-container">
+                <img src="/static/aboutus value 2.png" class="img-fluid pl-3 ml-3" style="max-width: 180px;">
+                <div>
+                    <h1 class="text-left ml-5 mt-4 pt-3 pr-5" style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Explore</h1>
+                    <p class="text-left ml-5 pr-5" style="font-size:15px;font-family: 'Lato', sans-serif;">Always be curious to know<br> more. Never stop exploring.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+  
+    <div>
+        <hr>
+    </div>
+  
+    <div class="row mb-4" style="margin-top:40px">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 bordered-column pl-4">
+            <div class="image-text-container">
+                <img src="/static/Ekak website- Value 3 (1).png" class="img-fluid ml-4" style="max-width:200px;">
+                <div>
+                    <h1 class="text-left ml-5 pr-5 mt-2" style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Teamwork</h1>
+                    <p  class="text-left ml-5 pr-5 mt-1" style="font-size:15px;font-family: 'Lato', sans-serif;">Cultivate meaningful work and relationship together</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 bordered-column pl-4">
+            <div class="image-text-container">
+                <img src="/static/Ekak website- Value 4 (1).png" class="img-fluid pl-3 ml-5" style="max-width:140px;">
+                <div>
+                    <h1 class="text-left ml-5 pr-5 mt-1" style="font-size:24px;font-family: 'Red Hat Display', sans-serif;">Create Impact</h1>
+                    <p class="text-left ml-5 pr-5" style="font-size:15px;font-family: 'Lato', sans-serif;">Small gesture can have big Impact.Create where it matter</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+  </div>
+  
+
+  
+
+
+
+
+
+  <div class="container-fluid p-3 my-5">
+    <div class="row no-gutters">
+        <div class="col-12 col-md-8 image-column mb-4 mb-md-0 ">
+            <img src="/static/Ekak website- Innovate with us.png" class="img-fluid" alt="Innovate with us image">
+        </div>
+
+        <div class="col-12 col-md-4 text-column d-flex flex-column justify-content-center align-items-center align-items-md-end text-md-right">
+            <div class="mt-4 mt-md-0" style="margin-bottom: 15px;">
+                <p class="heading-text">Innovate with us</p>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <p class="subheading-text">Automate and simplify your business operations with<br> easy and secure solutions</p>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <form class="form-inline">
+                    <button class="btn btn-dark" type="submit">CONTACT US</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+  .image-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-column {
+    text-align: center; /* Center text on mobile */
+}
+
+.heading-text {
+    font-size: 3.75rem; /* Responsive font size */
+    font-family: 'Red Hat Display', sans-serif;
+    color: black;
+}
+
+.subheading-text {
+    font-size: 1.125rem; /* Responsive font size */
+    font-family: 'Red Hat Display', sans-serif;
+    color: black;
+}
+
+.btn-dark {
+    width: 100%; /* Full-width button on smaller screens */
+    background-color: black;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .text-column {
+        text-align: right; /* Align text to the right on larger screens */
+    }
+
+    .heading-text {
+        font-size: 3rem; /* Larger font size on larger screens */
+    }
+
+    .subheading-text {
+        font-size: 0.8rem; /* Larger font size on larger screens */
+        text-align: center;
+    }
+
+    .btn-dark {
+        width: auto; /* Adjust button width for larger screens */
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+
 
 
 
