@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <style>
+        *{
+            padding:0;
+            margin:0;
+        }
      #navbar {
   background-color: transparent;
   transition: background-color 0.5s ease;
@@ -66,36 +70,178 @@
 
             @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Glacial+Indifference:wght@400;700&family=Lato:wght@400;700&display=swap');
                         
-.background-container {
-position: relative;
-width: 100%;
-height: 100vh;
+            .background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/static/Team\ Page\ -Ekak\ Website\ 4.png');
+  background-size: cover;
 }
-.overlay-text {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color:black;
-text-align: center;
-width: 100%;
-font-size: 10rem;
-font-family:'Red Hat Display', sans-serif;
-font-weight: 700;
 
-}
-@media (max-width: 767px) {
 .overlay-text {
-    font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 8rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  line-height: 100%;
 }
-}
-.text1{
-  font-family:'Red Hat Display', sans-serif;
-  font-size:3rem;
-  text-align:center;
-  justify-content:center;
+
+.text1 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
   margin-top: 120px;
 }
+
+@media (max-width: 767px) {
+  .background-container {
+    height: 50vh; 
+   
+  }
+  
+  .overlay-text {
+    font-size: 2.5rem; 
+    padding: 0 10px;  
+    box-sizing: border-box;
+  }
+  
+ 
+}
+
+@media (max-width: 767px) {
+  .text1 {
+    font-size: 1.3rem; 
+    margin-top: 60px; 
+  }
+
+ 
+  .toggle-br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+ 
+  .toggle-br {
+    display: inline;
+  }
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top:200px;
+   
+}
+@media (max-width: 767px) {
+  .container {
+    margin-top:0px;
+  }
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 20%;
+    perspective: 1000px;
+    margin: 30px 0;
+    border:none;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-front {
+    background-color:transparent;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    background-color: #158d91;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+
+
+
+
+.footer {
+        background-color: #0D6667;
+        color: white;
+        
+    }
+
+    .footer .bottom-left-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .footer .contact-column {
+        text-align: right;
+    }
+
+    .footer .contact-column h4,
+    .footer .contact-column p {
+        margin: 0;
+        padding: 0;
+    }
+
         </style>
     <title>Our Team</title>
   </head>
@@ -113,257 +259,266 @@ font-weight: 700;
 
 
 
-  <div class="container-fluid">
-    <div class="text1">
-      We’re a small team committed to staying<br> streamlined as we grow. Each of us is an expert<br> with a range of interests. We steer clear of toxic<br> projects and rigid work practices. We do our<br> best work when we’re happy, well-rested, and<br> motivated—no late nights or crunch time<br> needed!
+  <div class="container" style="margin-top: 100px;" >
+    <div class="text1" style="line-height: 100%;">
+      We’re a small team committed to staying streamlined as we grow.<br class="toggle-br"> Each of us is an expert with a range of interests. We steer clear of <br class="toggle-br"> toxic projects and rigid work practices. We do our best work when<br class="toggle-br"> we’re happy, well-rested, and motivated—no late nights or crunch<br class="toggle-br"> time needed!
     </div>
   </div>
-
-
-
-  <div class="container d-flex justify-content-center align-items-center" style="margin-bottom:250px">
-    <div class="card-container">
-        <div class="row justify-content-center">
-            <div class="card-wrapper">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-wrapper card-below">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-  <div class="container d-flex justify-content-center align-items-center" style="margin-bottom:250px">
-    <div class="card-container">
-        <div class="row justify-content-center">
-            <div class="card-wrapper">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-wrapper card-below">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-  <div class="container d-flex justify-content-center align-items-center" style="margin-bottom:250px">
-    <div class="card-container">
-        <div class="row justify-content-center">
-            <div class="card-wrapper">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-wrapper card-below">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-  <div class="container d-flex justify-content-center align-items-center" style="margin-bottom:250px">
-    <div class="card-container">
-        <div class="row justify-content-center">
-            <div class="card-wrapper">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-wrapper card-below">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-  <div class="container d-flex justify-content-center align-items-center" style="margin-bottom:250px">
-    <div class="card-container">
-        <div class="row justify-content-center">
-            <div class="card-wrapper">
-                <div class="card-flip">
-                    <div class="card-front">
-                        <img src="/static/blog2.jpeg" class="card-img-top" style="object-fit: cover; border-radius: 20px; overflow: hidden;">
-                        <div class="card-body">
-                            <p class="card-text mt-0" style="text-align:end;">Shashank Mishra <br> CEO and Founder</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-body">
-                            <p class="card-text">This is the back side of the card with some additional information.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-</div>
-
-
-  <style>
   
- 
-        .card-container {
-        position: relative;
-        margin-bottom: 20px;
-    }
 
-    .card-wrapper {
-        perspective: 1000px;
-    }
 
-    .card-flip {
-        width: 18rem;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        position: relative;
-        border: none;
-        border-radius: 20px;
-    }
 
-    .card-wrapper:hover .card-flip {
-        transform: rotateY(180deg);
-    }
+  
 
-    .card-front, .card-back {
-        backface-visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-    }
+  <div class="container"  style="margin-top: 100px;">
+    <!-- First Row -->
+    <div class="row">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Shashank Misra Team page.png" alt="Card Image 1">
+                </div>
+                <div class="card-back">
+                    <p style="font-size: 15px;">FIRE-FIGHTER<br> who loves to tackle new innovation and idea, been innovating
+                        since birth. (It seems)</p>
+                </div>
+            </div>
+            <div class="card-text">Shashank Misra</div>
+            <div class="card-bottom-text">CEO & FOUNDER</div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Mohd. Numan Photo Team age.png" alt="Card Image 2">
+                </div>
+                <div class="card-back">
+                    <p class="pt-4" style="font-size: 13px;">THE TECH GURU<br>
+                        Master of both the front and back-end realms. When not crafting seamless user experiences, Numan is busy perfecting the art of balancing his diet with equal parts code and cookies.</p>
+                </div>
+            </div>
+            <div class="card-text">Mohd. Numan</div>
+            <div class="card-bottom-text">Full-Stack Developer </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Neelakshi Mishra Team Page.png" alt="Card Image 3">
+                </div>
+                <div class="card-back">
+                    <p class="pt-3"  style="font-size: 13px;">THE CREATIVE CATALYST OR GROWTH GURU <br>
+                        Turns bland ideas into brilliant concepts with a dash of creativity. They’re the spark that gets the brainstorming sessions buzzing.</p>
+                </div>
+            </div>
+            <div class="card-text">Neelakshi Mishra</div>
+            <div class="card-bottom-text">Growth Associate</div>
+        </div>
+    </div>
+    <!-- Second Row -->
+    <div class="row">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Unnati Bajpai Team Page.png" alt="Card Image 4">
+                </div>
+                <div class="card-back">
+                    <p class="pt-2"  style="font-size: 13px;">VIBE COORDINATOR<br>
+                        Brings positivity and energy to every project. They make work enjoyable and are always ready to lend a hand or a laugh.</p>
+                </div>
+            </div>
+            
+            <div class="card-text">Unnati Bajpai</div>
+            <div class="card-bottom-text">Business Developer</div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Anjali Maurya Team Page.png" alt="Card Image 5">
+                </div>
+                <div class="card-back">
+                    <p class="pt-4"  style="font-size: 13px;">UNDERCOVER FUNSTER<br>
+                        Anjali's the quiet powerhouse who works hard behind the scenes. Shy? Maybe. But their surprising wit and hidden fun always make the workday brighter!</p>
+                </div>
+            </div>
+            <div class="card-text">Anjali Maurya</div>
+            <div class="card-bottom-text">Business Developer</div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Team Page Ekak Website 1 (1).png" alt="Card Image 6">
+                </div>
+                <div class="card-back">
+                    <p class="pt-2"  style="font-size: 14px;">DEV DREAMER<br>
+                        Sweet and reliable, Astha blends code with a touch of charm, always delivering results with a smile.</p>
+                </div>
+            </div>
+            <div class="card-text">Astha Dixit</div>
+            <div class="card-bottom-text">Python Developer</div>
+        </div>
+    </div>
+    <!-- Third Row -->
+    <div class="row">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Richa Shukla.png" alt="Card Image 7">
+                </div>
+                <div class="card-back">
+                    <p class="pt-2"  style="font-size: 14px;">TECH GEM<br>
+                        Can tackle any issue with a smile and a can-do attitude. When there’s a problem, they’re on it, turning headaches into smooth sailing</p>
+                </div>
+            </div>
+            <div class="card-text">Richa Shukla</div>
+            <div class="card-bottom-text">Python Developer</div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Amitesh Photo.png" alt="Card Image 8">
+                </div>
+                <div class="card-back">
+                    <p  style="font-size: 14px;">CODE FIXER <br>
+                        Knows the ins and outs of all things tech and fixes problems with ease. If you’ve got a tech issue, they’re the expert who can solve it in no time.</p>
+                </div>
+            </div>
+            <div class="card-text">Amitesh Gaur</div>
+            <div class="card-bottom-text">Python Developer</div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/static/Chenu Correct Image.png" alt="Card Image 9">
+                </div>
+                <div class="card-back">
+                    <p class="pt-5 mt-2 pb-5"  style="font-size: 13px;">YOUR ALL TIME GO-TO PERSON<br>
+                        Meet Chhenu, our office stress-buster. When things get tough, Chhennu's wagging tail and cuddles are guaranteed to turn your frown upside down!</p>
+                </div>
+            </div>
+            <div class="card-text">Chhenu</div>
+            <div class="card-bottom-text text-right">Chief Barking Officer</div>
+        </div>
+    </div>
+</div>
+<style>
+    .card-text, .card-bottom-text {
+    text-align: right;
+    margin-top: 10px;
+    color: black;
+    padding-right:15;
+}
 
-    .card-front {
-        z-index: 2;
-        transform: rotateY(0deg);
-    }
+.card-bottom-text {
+    text-align: right;
+    
+    font-size: 1rem; 
+    color: black;
+}
+@media (max-width: 767px) {
+  
 
-    .card-back {
-        transform: rotateY(180deg);
-        background-color: #f8f9fa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  
 
-    .card {
-        margin-bottom: 20px;
+    .card-text, .card-bottom-text {
+        font-size: 0.875rem; 
     }
-
-    .card-below {
-        position: relative;
-        top: 40px;
-        margin-left: 20px;
-    }
+}
 </style>
 
-  {% include'base_footer.html' %}
+
+<div class="container pt-5 mt-5" >
+    <div class="heading-row">
+        <h1 class="main-heading">It’s all about the </h1>
+        <h2 class="sub-heading">PEOPLE</h2>
+        <h5 class="pt-4 " style="font-weight: 300;font-style: italic;">and at Ekak we create a perfect balance of people and technology</h5>
+    </div>
+</div>
+<style>
+    .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.heading-row {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-heading {
+    font-size: 4.5rem; 
+    color:black;
+    margin-bottom: 10px;
+    font-weight:350;
+}
+
+.sub-heading {
+    font-size: 8.5rem; 
+    font-style: italic;
+    line-height:70%;
+    color:black;
+}
+
+
+@media (max-width: 767px) {
+    .main-heading {
+        font-size: 1.5em;
+    }
+    
+    .sub-heading {
+        font-size: 3rem; 
+    }
+}
+</style>
+
+
+
+<header class="text-light pt-5 mt-5" style="background-color:#158d91">
+    <div class="container-fluid p-0 m-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 pl-5 text-center text-md-left">
+                <h1 style="font-size: 1.2rem;margin-top:20px">Sign up to get latest updates, promotions, and more.</h1>
+                <form style="margin-top:50px">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn btn-primary" style="background-color: black;">SIGN UP</button>
+                </form>
+                <p class="small">By signing up, you agree that your data will be collected and used subject to our policy.</p>
+            </div>
+            <div class="col-md-6 pr-5 text-center text-md-end">
+                <ul class="nav justify-content-center justify-content-md-end">
+                    <li class="nav-item"><a class="nav-link" href="/about" style="font-size:18px;color:white;">About</a></li>
+                   
+                    <li class="nav-item"><a class="nav-link" href="/blog" style="font-size:18px;color:white;">Blogs</a></li>
+         
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size:18px;color:white;">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/career" style="font-size:18px;color:white;">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact" style="font-size:18px;color:white;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer p-0 m-0" style="background-color:#158d91">
+        <div class="container-fluid position-relative ">
+            <div class="row">
+                <div class="col-md-6 p-0 m-0 text-center text-md-left">
+                    <img src="/static/ekak (3).png" style="max-width:60%; height:auto;">
+                </div>
+                <div class="col-md-6 pr-5  contact-column text-center text-md-right " style="margin-top:90px">
+                    <h4>Contact with Us</h4>
+                    <div class="container text-left d-flex flex-row-reverse">
+                       
+                      
+                        <a href="#"><small style="color:white" class="fa fa-lg fa-linkedin pull-right p-2">  </small></a>
+                        <a href="#"><small style="color:white" class="fa fa-lg fa-twitter pull-right p-2">  </small></a>
+                        <a href="#"><small style="color:white" class="fa fa-lg fa-facebook pull-right pr-2 mt-2">  </small></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</header>
 
 
 
