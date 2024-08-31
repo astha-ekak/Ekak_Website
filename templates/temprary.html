@@ -1,23 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-us-Page</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/font-size/font-size.css">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
-     <style>
-
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+             
 #navbar {
   background-color: transparent;
   transition: background-color 0.5s ease;
@@ -62,26 +57,70 @@
   }
 }
 
+            .underline {
+              border-bottom: 2px solid black;
+              display: inline-block;
+              margin-bottom: 20px;
+              font-size: 30px;
+              font-family: 'Red Hat Display', sans-serif;
+          }
+          .bg-image {
+              background-size: cover;
+              background-position: center;
+              height: 100%;
+          }
+          .image-container {
+              height: 100%; 
+          }
+          .image-row {
+              height: 50%; 
+          }
+          .column-container {
+              height: 600px; 
+          }
 
-            
-           
-.background-container {
-position: relative;
-width: 100%;
-height: 100vh;
-background: url('/static/Contact\ us\ \ 3.png') no-repeat center center/cover;
-}
+          .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            font-family: 'Red Hat Display', sans-serif;
+            border:none;
+            background:transparent;
+        }
 
-@media (max-width: 767.98px) {
-    .background-container {
-        height: 70vh; /* Half viewport height for smaller screens */
+      
+      .card-heading {
+        font-size: 15.3px;
+        font-weight: bold;
+        font-family: 'Red Hat Display', sans-serif;
+        padding:30px;
     }
-}
+    .card-subheading {
+        font-size: 13.3px;
+        color: black;
+        font-family: 'Red Hat Display', sans-serif;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .card-container {
+        position: relative;
+        height: 300px; 
+        padding:30px;
+    }
+    .card-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
 
 
 
-
-.footer {
+    .footer {
       background-color: #0D6667;
       color: white;
       padding: 20px 0;
@@ -119,155 +158,283 @@ background: url('/static/Contact\ us\ \ 3.png') no-repeat center center/cover;
       color: white;
       font-size: 1.5rem;
   }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    {% include 'base_header.html' %}
+    <div class="container-fluid mt-5 pt-5">
+      <!-- Heading Row -->
+      <div class="row" style="padding:30px 20px;">
+        <div class="col-12">
+          <h2 style="
+            border-bottom: 2px solid black;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-family: 'Red Hat Display', sans-serif;
+          "><i>Employee’s Choice</i></h2>
+        </div>
+      </div>
+  
+     
+      <div class="row" style="padding: 0 15px;">
+        
+        <div class="col-md-6" style="padding: 0; position: relative; height: 500px;">
+          <div style="
+            background-image: url('/static/blog\ page.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          ">
+            <div style="
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+              color: white;
+              text-align: center;
+              padding: 10px;
+              background:transparent;
+              width: calc(100% - 20px);
+              box-sizing: border-box;
+              border-radius: 5px;
+            ">
+              Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column with Two Images -->
+        <div class="col-md-6 d-flex flex-column" style="padding: 0; height: 500px;">
           
-        </style>
-</head>
-<body>
+          <div class="row" style="flex: 1; margin-bottom:10px; margin-left:10px;padding: 0;">
+            <div class="col-12" style="position: relative; height: 100%;">
+              <div style="
+                background-image: url('/static/blog\ pg.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+              ">
+                <div style="
+                  position: absolute;
+                  bottom: 10px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  color: white;
+                  text-align: center;
+                  padding: 10px;
+                  background:transparent;
+                  width: calc(100% - 20px);
+                  box-sizing: border-box;
+                  border-radius: 5px;
+                ">
+                  Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Image Row -->
+          <div class="row" style="flex: 1; padding: 0;margin-bottom:0px; margin-left:10px">
+            <div class="col-12" style="position: relative; height: 100%;">
+              <div style="
+                background-image: url('/static/blog\ pgg.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+              ">
+                <div style="
+                  position: absolute;
+                  bottom: 10px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  color: white;
+                  text-align: center;
+                  padding: 10px;
+                  background: transparent;
+                  width: calc(100% - 20px);
+                  box-sizing: border-box;
+                  border-radius: 5px;
+                ">
+                  Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <div class="container-fluid mt-5">
   
-      {% include 'base_header.html' %}
-              <div class="background-container"></div>
+    <div class="row">
+        <div class="col-12" style="padding:30px">
+            <h2 class="underline"><i>The Latest</i></h2>
+        </div>
+    </div>
+
     
-
-  
-        
-   
-        
-          <div class="row">
-            <div class="col-sm-5 p-5">
-              <form class="responsive-form" style="margin-top: 30px;">
-                <div class="mb-3">
-                    <label for="exampleInputText1" class="form-label">NAME</label>
-                    <input type="text" class="form-control" id="exampleInputText1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputText3" class="form-label">INDIVIDUAL / COMPANY</label>
-                    <input type="text" class="form-control" id="exampleInputText3">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputText4" class="form-label">COMPANY NAME IF COMPANY</label>
-                    <input type="text" class="form-control" id="exampleInputText4">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea2" class="form-label">HOW CAN WE HELP YOU</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-                </div>
-            </form>
-            
-            <style>
-            /* Default styles for larger screens */
-            .responsive-form {
-                margin-left: 180px;
-              
-                margin-top: 10px;
-            }
-            
-            /* Adjust margins for smaller screens */
-            @media (max-width: 767.98px) {
-                .responsive-form {
-                    margin-left: 0;
-                    margin-right: 0;
-                    margin-top: 0; /* Set top margin to zero for smaller screens */
-                    padding-left: 10px; /* Optional: Add some padding for better presentation */
-                    padding-right: 10px; /* Optional: Add some padding for better presentation */
-                }
-            }
-            </style>
-            
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card-container">
+                <img src="/static/blog3.jpeg" class="card-img" alt="Card Image 1">
             </div>
-            <div class="col-sm-7 bg-cover" style="background-image: url('/static/contact7.png'); color: white; height: 550px; background-size: cover;margin-top:-60px;background-position: center;">
-
+            <h3 class="card-heading mt-3">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit. </h3>
+            <p class="card-subheading">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus mus. </p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card-container">
+                <img src="/static/blog2.jpeg" class="card-img" alt="Card Image 2">
             </div>
+            <h3 class="card-heading mt-3">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.</h3>
+            <p class="card-subheading">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus mus. </p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card-container">
+                <img src="/static/blog1.jpeg" class="card-img" alt="Card Image 3">
+            </div>
+            <h3 class="card-heading mt-3">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.</h3>
+            <p class="card-subheading">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus mus. </p>
+        </div>
+    </div>
+</div>
 
+
+
+
+
+<div class="container-fluid mt-5">
+ 
+  <div class="row" style="padding:30px;margin:30px">
+      <div class="col-12 text-right" >
+          <h2 class="underline" ><i>Top Article</i></h2>
+      </div>
+  </div>
+
+ 
+  <div class="row column-container " style="margin-bottom: 50px;padding-bottom: 50px;">
+     
+      <div class="col-md-8 image-container">
+          <div class="bg-image" style="background-image: url('/static/blog\ pageee.jpg');"></div>
+      </div>
+
+      
+      <div class="col-md-4 d-flex flex-column justify-content-between">
+        
+          <div class="row mb-3">
+              <div class="col-6">
+                  <img src="/static/BLOG PAGE222.jpg" class="img-fluid"  style="max-width:100px">
+              </div>
+              <div class="col-6">
+                  <h3 class="card-heading" style="
+                  font-size: 10px;
+        font-weight: bold;
+        font-family: 'Red Hat Display', sans-serif;
+        padding:10px;">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit. </h3>
+                  <p class="card-subheading" style="font-size:7px;
+        color: black;
+        font-family: 'Red Hat Display', sans-serif;
+        padding-left:10px;
+        padding-right:10px;">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus<br> mus. </p>
+              </div>
           </div>
         
-        
-          <div class="scrolling-text-container">
-            <ul class="scrolling-text-list">
-                <li>FOR INNOVATION</li>
-                <li>FOR SOLUTION</li>
-                <li>FOR PEOPLE</li>
-                <!-- Duplicating items for seamless scroll -->
-                <li>FOR INNOVATION</li>
-                <li>FOR SOLUTION</li>
-                <li>FOR PEOPLE</li>
+          <div class="row mb-3">
+              <div class="col-6">
+                  <img src="/static/BLOG PAGE111.jpg" class="img-fluid" style="max-width:100px">
+              </div>
+              <div class="col-6">
+                  <h3 class="card-heading" style="
+                  font-size: 10px;
+        font-weight: bold;
+        font-family: 'Red Hat Display', sans-serif;
+        padding:10px;">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.</h3>
+                  <p class="card-subheading"  style="font-size:7px;
+                  color: black;
+                  font-family: 'Red Hat Display', sans-serif;
+                  padding-left:10px;
+                  padding-right:10px;">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus<br> mus. </p>
+              </div>
+          </div>
+          
+          <div class="row">
+              <div class="col-6">
+                  <img src="/static/BLOG PAGE1111.jpg" class="img-fluid" style="max-width:100px">
+              </div>
+              <div class="col-6">
+                  <h3 class="card-heading" style="
+                  font-size: 10px;
+        font-weight: bold;
+        font-family: 'Red Hat Display', sans-serif;
+        padding:10px;">Lorem Ipsum Dolor -Sit Amet,<br> Consectetuer Adipiscing Elit.</h3>
+                  <p class="card-subheading"  style="font-size:7px;
+                  color: black;
+                  font-family: 'Red Hat Display', sans-serif;
+                  padding-left:10px;
+                  padding-right:10px;">Cum sociis natoque penatibus et magnis<br> dis parturient montes, nascetur ridiculus<br> mus. </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  {% include 'base_footer.html' %}
+</div>
 
 
 
-                <li>FOR INNOVATION</li>
-                <li>FOR SOLUTION</li>
-                <li>FOR PEOPLE</li>
-            </ul>
-        </div>
-        
-        <style>
-        .scrolling-text-container {
-            width: 100%;
-            overflow: hidden; /* Hide overflow to contain the animation */
-            white-space: nowrap; /* Prevent the list items from wrapping */
-        }
-        
-        .scrolling-text-list {
-            display: flex; /* Use flex for horizontal alignment */
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            animation: scroll-text 10s linear infinite; /* Continuous scrolling animation */
-        }
-        
-        .scrolling-text-list li {
-            margin-right: 70px; /* Space between the items */
-            font-size: 38px;
-            font-family: 'Lato', sans-serif;
-            color: grey;
-        }
-        
-        /* Keyframes for seamless scrolling effect */
-        @keyframes scroll-text {
-            0% {
-                transform: translateX(0); /* Start position */
-            }
-            100% {
-                transform: translateX(-50%); /* End position, moves to the left by 50% of its width */
-            }
-        }
-        </style>
-        
-        {% include 'base_footer.html' %}
 
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
-   
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  
+    <script>
    
    
 
 
 
    
-        window.addEventListener("scroll", function() {
-          var navbar = document.getElementById("navbar");
-          var logo = document.getElementById("navbar-logo");
-        
-          if (window.scrollY > 50) { 
-            navbar.classList.add("scrolled");
-           
-            logo.src = "/static/Ekak logo mark (white logo with blue inner circle).png"; 
-          } else {
-            navbar.classList.remove("scrolled");
-           
-            logo.src = "/static/Ekak logo mark without colour version.png"; 
-          }
-        });
-        
-            </script>
-           
+      window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("navbar-logo");
       
-</body>
+        if (window.scrollY > 50) { 
+          navbar.classList.add("scrolled");
+         
+          logo.src = "/static/Ekak logo mark (white logo with blue inner circle).png"; 
+        } else {
+          navbar.classList.remove("scrolled");
+         
+          logo.src = "/static/Ekak logo mark without colour version.png"; 
+        }
+      });
+      
+          </script>
+         
+          
+        
+        
+        
+        </body>
 </html>

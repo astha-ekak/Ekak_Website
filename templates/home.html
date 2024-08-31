@@ -147,7 +147,7 @@
 
     .testimonial-container {
         background-color: white;
-        padding: 40px;
+        padding: 10px;
         text-align: center;
     }
     .quote-icon {
@@ -156,7 +156,7 @@
     }
     .testimonial {
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .author {
         
@@ -177,10 +177,7 @@
     }
     
     
-    .responsive-section {
-        font-size: 40px;
-        margin-left: 95px;
-    }
+   
    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Glacial+Indifference:wght@400;700&family=Lato:wght@400;700&display=swap');
    
    
@@ -201,7 +198,7 @@
 
 .text-right-100px {
     font-size: 8.5rem; 
-    font-family: 'Glacial Indifference', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     margin-right:70px;
     padding:10px;
@@ -210,7 +207,7 @@
 
 .text-right-24px {
     font-size: 1.1875rem; 
-    font-family: 'Lato', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-right:70px;
     padding:10px;
 }
@@ -240,22 +237,6 @@
   }
 }
 
-
-
-
-@media (max-width: 768px) {
-        .responsive-section {
-            margin-left: 15px; 
-        }
-    }
-
-    @media (max-width: 576px) {
-        .responsive-section {
-            font-size: 28px; 
-            margin-left: 10px; 
-        }
-    }
-    
 
     @import url('https://your-font-host.com/gilroy.css'); 
 
@@ -315,9 +296,15 @@
           <li class="nav-item">
             <a class="nav-link" href="/about" >About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog" >Blogs</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://medium.com/@EkakInn">Blogs</a>
+                <!-- Add more dropdown items here if needed -->
+            </div>
+        </li>
           <li class="nav-item">
             <a class="nav-link" href="/teams" >Team</a>
           </li>
@@ -328,314 +315,413 @@
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
-        <form class="form-inline ml-auto">
-          <button class="btn btn-dark my-2 my-sm-0" type="submit">Get Started</button>
+        <form class="form-inline ml-auto pr-3 pl-3">
+          <a href="/contact" class="btn btn-dark my-2 my-sm-0 pr-4" type="submit">Get Started</a>
         </form>
       </div>
     </nav>
 
    
-      <div class="row justify-content-start" style="margin-top:220px;" >
-        <div class="col-md-10 col-12 ">
-            <div class="row">
-                <div class="col-md-6 pl-5 col-12 d-flex justify-content-center align-items-center my-2 font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
-                    <p class="head-text" style="white-space: nowrap;">
-                        <span style="color:#B3631A;">\</span> We Proudly
-                    </p>
-                </div>
-                
-                <div class="col-md-4  col-12 d-flex my-1">
-                    <img src="/static/Ekak Website 1.gif" alt="GIF" class="img-fluid">
-                </div>
-                
-                <div class="col-md-2 col-12 d-flex justify-content-center align-items-center my-2  font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
-                    <p class="head-text" style=" white-space: nowrap; margin: 0;">
-                        work
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-<style>
-  .head-text{
-            font-family: 'Red Hat Display', sans-serif;
-            font-size:85px;
-
+    <div class="row justify-content-start content-row1">
+      <div class="col-md-10 col-12">
+          <div class="row no-gutters"> 
+              <div class="col-md-6 col-12 d-flex justify-content-center align-items-center my-2 font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
+                  <p class="head-text" style="white-space: nowrap;">
+                      <span style="color:#B3631A;">\</span> We Proudly
+                  </p>
+              </div>
+              
+              <div class="col-md-4 col-12 d-flex my-1">
+                  <img src="/static/Ekak Website 1.gif" alt="GIF" class="img-fluid">
+              </div>
+              
+              <div class="col-md-2 col-12 d-flex justify-content-center align-items-center my-2 font-weight-bold" style="font-size: 3rem; font-size: calc(2.5rem + 2vw);">
+                  <p class="head-text" style="white-space: nowrap; margin: 0;">
+                      work
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <style>
+      .content-row1 {
+          margin-top: 220px; 
+      }
+  
+      .head-text {
+          font-family: 'Red Hat Display', sans-serif;
+          font-size: 85px;
+      }
+  
+      @media (max-width: 1200px) {
+          .head-text {
+              font-size: 40px;
           }
-             @media (max-width: 1200px) {
-                 .head-text {
-                     font-size: 40px;
-                 }
-             }
+          .content-row1 {
+              margin-top: 150px; 
+          }
+      }
+  
+      @media (max-width: 992px) {
+          .head-text {
+              font-size: 35px;
+          }
+          .content-row1 {
+              margin-top: 100px; 
+          }
+      }
+  
+      @media (max-width: 768px) {
+          .head-text {
+              font-size: 30px;
+          }
+          .content-row1 {
+              margin-top: 50px; 
+          }
+      }
+  
+      @media (max-width: 576px) {
+          .head-text {
+              font-size: 45px;
+              font-weight: 600;
+              font-family: century-gothic, sans-serif;
+          }
+          .content-row1 {
+              margin-top: 100px; 
+          }
+  
          
-             @media (max-width: 992px) {
-                 .head-text {
-                     font-size: 35px;
-                 }
-             }
-         
-             @media (max-width: 768px) {
-                 .head-text {
-                     font-size: 30px;
-                 }
-             }
-         
-             @media (max-width: 576px) {
-                 .head-text {
-                     font-size: 45px;
-                     font-weight:600;
-                     font-family:century-gothic,sans-serif;
-                    
-                 }
-             }
-</style>
-    
+          .content-row .row.no-gutters > [class*='col-'] {
+              padding-left: 0;
+              padding-right: 0;
+          }
+      }
+  </style>
+  
 
 
 <!-- Innovative section -->
 
     
 
-   
-        <section class="row " style="margin-top:150px;">
-            <div class="col text-left responsive-section">
-                <p class="responsive-text" >
-                    Ekak Innovations is a product development <br>firm dedicated to creating <span  style="color:#FF914D;">innovative</span> solutions<br> for today's most pressing challenges.
-                </p>
-            </div>
-        </section>
+<section class="row responsive-section">
+  <div class="col text-left">
+      <p class="responsive-text">
+          Ekak Innovations is a product development <br>firm dedicated to creating <span style="color:#FF914D;">innovative</span> solutions<br> for today's most pressing challenges.
+      </p>
+  </div>
+</section>
 
-        <style>
-       .responsive-text{
-        font-family: "Poppins", sans-serif;
-            font-size:50px;
-            
-
-          }
-             @media (max-width: 1200px) {
-                 .responsive-text {
-                     font-size: 27px;
-                 }
-             }
-         
-             @media (max-width: 992px) {
-                 .responsive-text {
-                     font-size: 23px;
-                 }
-             }
-         
-             @media (max-width: 768px) {
-                 .responsive-text {
-                     font-size: 20px;
-                 }
-             }
-         
-             @media (max-width: 576px) {
-                 .responsive-text {
-                     font-size: 26px;
-                     font-weight:600;
-                
-                 }
-             }
-        </style>
-   
-
-    <div class="row align-items-center">
-      <div class="col-md-6 mt-5 pt-5 col-sm-12 mt-2 d-flex justify-content-center">
-        <div class="card" style="border:none;">
-            <img src="/static/Homepage ekak website.png" class="card-img-top img-fluid" alt="Card Image" style="border-top-left-radius: 60px;
-                border-top-right-radius: 60px;
-                border-bottom-left-radius: 60px;
-                border-bottom-right-radius: 60px; max-width: 100%; max-height: 85vh;">
-        </div>
-    </div>
-    
-      <div class="col-md-6 pt-5 mt-5 col-sm-12 p-0 d-flex justify-content-left">
-        <div class="card text-left" style="border:none;">
-          <div class="card-body">
-            <div class="icon-container">
-              <div class="icon-card col text-left">
-                <img src="/static/Untitled design.png" style="max-width:80px">
-                <h6  class="pt-2" style="font-size:24px;">Renewable Energy</h6>
-                <p class="small mt-4" style="font-size:15px">At Ekak, we believe in the power of renewable energy to transform <br> communities and improve lives. That's why we're proud to offer a range<br>  of solar lamp and solar charging hubs with remote monitoring systems.</p>
-              </div>
-              <div class="icon-card col text-left">
-                <img src="/static/Untitled design 11.png" style="max-width:80px;">
-                <h6 class="pt-2" style="font-size:24px;">3D Printing</h6>
-                <p class="small mt-4" style="font-size:15px">We share passion about the possibilities of 3D printing and additive<br>  manufacturing.Whether you need a one-of-a-kind prototype,a small <br> production run,or a large-scale manufacturing solution, we can help you<br>  achieve quickly, efficiently, & cost-effectively.</p>
-              </div>
-              <div class="icon-card col text-left">
-                <img src="/static/Untitled design 22.png" style="max-width:80px">
-                <h6 class="pt-2" style="font-size:24px;">Digital Transformation</h6>
-                <p class="small mt-4 " style="font-size:15px">Digital transformation is crucial for all businesses.Our products enhance<br> safety infactories and warehouses, improve road safety, and  optimize<br> supply chain tracking. Whether you aim to prevent accidents, boost<br>  productivity, or ensure compliance, we got it all.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="row align-items-center no-gutters content-row"> 
+  <div class="col-md-6 col-sm-12 mt-2 d-flex justify-content-center">
+      <div class="card" style="border:none;">
+          <img src="/static/Homepage ekak website.png" class="card-img-top img-fluid" alt="Card Image" style="border-top-left-radius: 60px;
+              border-top-right-radius: 60px;
+              border-bottom-left-radius: 60px;
+              border-bottom-right-radius: 60px; max-width: 100%; max-height: 85vh;">
       </div>
-      
-    </div>
-    
+  </div>
+
+  <div class="col-md-6 col-sm-12 p-0 d-flex justify-content-left">
+      <div class="card text-left" style="border:none;">
+          <div class="card-body">
+              <div class="icon-container">
+                  <div class="icon-card col text-left">
+                      <img src="/static/Untitled design.png" style="max-width:80px">
+                      <h6 class="pt-2" style="font-size:24px;">Renewable Energy</h6>
+                      <p class="small mt-4" style="font-size:15px">At Ekak, we believe in the power of renewable energy to transform <br> communities and improve lives. That's why we're proud to offer a range<br>  of solar lamp and solar charging hubs with remote monitoring systems.</p>
+                  </div>
+                  <div class="icon-card col text-left">
+                      <img src="/static/Untitled design 11.png" style="max-width:80px;">
+                      <h6 class="pt-2" style="font-size:24px;">3D Printing</h6>
+                      <p class="small mt-4" style="font-size:15px">We share passion about the possibilities of 3D printing and additive<br>  manufacturing.Whether you need a one-of-a-kind prototype,a small <br> production run,or a large-scale manufacturing solution, we can help you<br>  achieve quickly, efficiently, & cost-effectively.</p>
+                  </div>
+                  <div class="icon-card col text-left">
+                      <img src="/static/Untitled design 22.png" style="max-width:80px">
+                      <h6 class="pt-2" style="font-size:24px;">Digital Transformation</h6>
+                      <p class="small mt-4 " style="font-size:15px">Digital transformation is crucial for all businesses.Our products enhance<br> safety infactories and warehouses, improve road safety, and  optimize<br> supply chain tracking. Whether you aim to prevent accidents, boost<br>  productivity, or ensure compliance, we got it all.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<style>
+  .responsive-section {
+    font-size: 40px;
+    margin-left: 95px;
+    margin-top: 150px;
+}
+
+  .responsive-text {
+      font-family: "Poppins", sans-serif;
+      font-size: 45px;
+  }
+
+  .content-row {
+      min-height: 400px; 
+      margin-top:0;
+  }
+  @media (max-width: 768px) {
+    .responsive-section {
+        margin-left: 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-section {
+        font-size: 28px; 
+        margin-left: 10px; 
+    }
+}
+
+
+  @media (max-width: 1200px) {
+      .responsive-text {
+          font-size: 27px;
+      }
+      .responsive-section {
+          margin-top: 100px;
+      }
+      .content-row {
+          min-height: 500px; 
+      }
+  }
+
+  @media (max-width: 992px) {
+      .responsive-text {
+          font-size: 23px;
+      }
+      .responsive-section {
+          margin-top: 80px;
+      }
+      .content-row {
+          min-height: 300px; 
+      }
+  }
+
+  @media (max-width: 768px) {
+      .responsive-text {
+          font-size: 20px;
+      }
+      .responsive-section {
+          margin-top: 50px;
+      }
+      .content-row {
+          min-height: 300px; 
+      }
+  }
+
+  @media (max-width: 576px) {
+      .responsive-text {
+          font-size: 26px;
+          font-weight: 400;
+      }
+      .responsive-section {
+          margin-top: 50px;
+      }
+
+      .content-row {
+          min-height: 250px; 
+      }
+
+      .row.no-gutters > [class*='col-'] {
+          padding-left: 0;
+          padding-right: 0;
+      }
+  }
+</style>
+
     <!-- Work Section -->
 
 
 
 
 <div class="container-fluid">
-  <div class="row heading11-row pt-5 mt-5">
-    <h2 class="heading11 ml-5 pl-5">WORK</h2>
+  <div class="row heading11-row mt-5">
+    <h2 class="heading11 ml-5 pl-5">SOLUTIONS</h2>
 </div>
 </div>
-
-    <div class="container">
-      
-      <div class="row cards11-row pt-3 mt-2">
-          <div class="card11" style="border-radius: 50%;">
-              <div class="card11-inner">
-                  <div class="card11-front">
-                    <img src="/static/3D printing work.png" >
-                  </div>
-                  <div class="card11-back">
-                      <p class="p-3" style="font-family: 'Poppins', sans-serif;"><span style="font-weight:700;">Ekakshar’s</span> product development service focuses on <span style="font-weight:700;">3D printing</span> and small-scale manufacturing. We use advanced technologies like Computational Flow Dynamics and Finite Element Analysis to ensure precision and efficiency. Let us bring your ideas to life with our <span style="font-weight:600;">innovative and sustainable solutions</span>. Contact us today!</p>
-                 
-                    </div>
+<div class="container">
+  <div class="row cards11-row pt-3 mt-2">
+      <div class="card11" style="border-radius: 50%;">
+          <div class="card11-inner">
+              <div class="card11-front">
+                  <img src="/static/3D printing work.png">
               </div>
-          </div>
-          <div class="card11">
-              <div class="card11-inner">
-                  <div class="card11-front">
-                   
-                    <img src="/static/Work 1 (Homepage).png" >
-                      
-                  </div>
-                  <div class="card11-back">
-                      <p class="p-3" style="font-family: 'Poppins', sans-serif;"><span style="font-weight:700;">Argus,</span>
-                        our advanced factory safety software with real-time monitoring and computer vision technology. It features <span style="font-weight:700;">automated safety checks,</span> predictive maintenance, and <span style="font-weight:700;">detailed incident analysis.</span> Proactively manage safety, reduce downtime, and enhance your manufacturing processes with our all-in-one solution.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="card11">
-              <div class="card11-inner">
-                  <div class="card11-front">
-                  
-                    <img src="/static/Dave Work Image.png">
-                  </div>
-                  <div class="card11-back">
-                      <p class="p-3" style="font-family: 'Poppins', sans-serif;"><span style="font-weight:700;">Dave,</span> our road safety solution uses machine learning for <span style="font-weight:700;">real-time driver behavior tracking.</span> With GPS monitoring, distraction and drowsiness alerts, lane tracking, and performance scores, we help prevent accidents and improve driver safety. Monitor and incentivize safe driving with our comprehensive system.</p>
-                  </div>
+              <div class="card11-back">
+                  <p class="p-3" style="font-family: 'Poppins', sans-serif;">
+                      <span style="font-weight:700;">Ekakshar’s</span> product development service focuses on
+                      <span style="font-weight:700;">3D printing</span> and small-scale manufacturing. We use advanced technologies like Computational Flow Dynamics and Finite Element Analysis to ensure precision and efficiency. Let us bring your ideas to life with our
+                      <span style="font-weight:600;">innovative and sustainable solutions</span>. Contact us today!
+                  </p>
+                  <a href="/contact" class="card11-button">Contact Us</a>
               </div>
           </div>
       </div>
+      <div class="card11">
+          <div class="card11-inner">
+              <div class="card11-front">
+                  <img src="/static/Work 1 (Homepage).png">
+              </div>
+              <div class="card11-back">
+                  <p class="p-3" style="font-family: 'Poppins', sans-serif;">
+                      <span style="font-weight:700;">Argus,</span> our advanced factory safety software with real-time monitoring and computer vision technology. It features
+                      <span style="font-weight:700;">automated safety checks,</span> predictive maintenance, and
+                      <span style="font-weight:700;">detailed incident analysis.</span> Proactively manage safety, reduce downtime, and enhance your manufacturing processes with our all-in-one solution.
+                  </p>
+                  <a href="https://argus-website-4d53eb984d34.herokuapp.com/" class="card11-button">Visit Now</a>
+              </div>
+          </div>
+      </div>
+      <div class="card11">
+          <div class="card11-inner">
+              <div class="card11-front">
+                  <img src="/static/Dave Work Image.png">
+              </div>
+              <div class="card11-back">
+                  <p class="p-3" style="font-family: 'Poppins', sans-serif;">
+                      <span style="font-weight:700;">Dave,</span> our road safety solution uses machine learning for
+                      <span style="font-weight:700;">real-time driver behavior tracking.</span> With GPS monitoring, distraction and drowsiness alerts, lane tracking, and performance scores, we help prevent accidents and improve driver safety. Monitor and incentivize safe driving with our comprehensive system.
+                  </p>
+                  <a href="/contact" class="card11-button">Contact Us</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row heading12-row justify-content-end">
+      <h6 class="heading12">
+          We build solutions that have a positive impact on
+          <span class="hide-on-small"><br></span>
+          the lives of each customer, thereby accelerating
+          <span class="hide-on-small"><br></span>
+          & bringing sustainability to the mainstream.
+      </h6>
+  </div>
+</div>
+
+<style>
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .heading11-row {
+      text-align: left;
+      margin-bottom: 20px;
+  }
+
+  .heading11 {
+      font-size: 4.3rem;
+      margin: 0;
+      color: black;
+  }
+
+  .cards11-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+
+  .card11 {
+      width: 30%;
+      perspective: 1000px;
+      border: none;
+  }
+
+  .card11-inner {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      border-radius: 25px;
+  }
+
+  .card11:hover .card11-inner {
+      transform: rotateY(180deg);
+  }
+
+  .card11-front, .card11-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 25px;
+  }
+
+  .card11-front {
+      background-color: transparent;
+      border-radius: 25px;
+  }
+
+  .card11-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+  }
+
+  .card11-back {
+      background-color: #158d91;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      padding: 15px;
+  }
+
+  .card11-button {
+      background-color: #f1c40f;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+  }
+
+  .card11-button:hover {
+      background-color: #e1b12c;
+  }
+
+  .heading12 {
+      text-align: right;
+  }
+
+  @media (max-width: 767px) {
+      .cards11-row {
+          flex-direction: column;
+          align-items: center;
+      }
       
-    
-  </div>
-  <div class="container">
-    <div class="row heading12-row justify-content-end">
-      <h6 class="heading12"> We build solutions that have a positive impact on<span class="hide-on-small"><br></span>
-        the lives of each customer, thereby accelerating<span class="hide-on-small"><br></span>
-        & bringing sustainability to the mainstream.</h6>
-  </div>
-  </div>
-  <style>
-    .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+      .card11 {
+          width: 80%;
+          margin-bottom: 20px;
+      }
+      
+      .heading12 {
+          font-size: 1rem;
+          text-align: center;
+      }
 
-.heading11-row {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.heading11 {
-    font-size: 4.3rem;
-    margin: 0;
-    color:black
-}
-
-.cards11-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.card11 {
-    width: 30%;
-    perspective: 1000px;
-    border:none;
-}
-
-.card11-inner {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    border-radius: 25px;
-}
-
-.card11:hover .card11-inner {
-    transform: rotateY(180deg);
-}
-
-.card11-front, .card11-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 25px;
-}
-
-.card11-front {
-    background-color: transparent;
-    border-radius: 25px;
-}
-
-.card11-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-.card11-back {
-    background-color: #158d91;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-}
-.heading12{
-text-align: right;
-}
-
-@media (max-width: 767px) {
-    .cards11-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card11 {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    .heading12 {
-                font-size: 1rem;
-                text-align: center;
-            }
-
-            .hide-on-small {
-                display: none; 
-            }
-}
-
-
-  </style>
+      .hide-on-small {
+          display: none;
+      }
+  }
+</style>
 
 
 <!--Award section -->
@@ -795,70 +881,38 @@ text-align: right;
 
 
                                       <!--BLog Section-->
-
-    <!-- <div class="container-fluid p-0 m-0" style="margin-top:30px">
-      <div class="row">
-          <div class="col-md-4 mb-2 pl-5">
-              <div class="card cylindrical-card">
-                  <img src="/static/Ekak Website10.png" class="card-img-top">
-              </div>
-              <div class="card-body" style="padding-top: 3px;">
-                  <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;text-align: left;">EKAK BLOG #1</h5>
-                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations. </p>
-              </div>
-          </div>
-          
-          <div class="col-md-4 mb-2 pl-5">
-              <div class="card cylindrical-card">
-                  <img src="/static/Ekak Website10.png" class="card-img-top">
-              </div>
-              <div class="card-body" style="padding-top: 3px;">
-                  <h5 class="card-title " style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #2</h5>
-                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations.</p>
-              </div>
-          </div>
-          
-          <div class="col-md-4 mb-2 pl-5">
-              <div class="card cylindrical-card">
-                  <img src="/static/Ekak Website11.png" class="card-img-top">
-              </div>
-              <div class="card-body" style="padding-top: 3px;">
-                  <h5 class="card-title" style="font-family: 'Glacial Indifference', sans-serif; font-size: 10px;">EKAK BLOG #3</h5>
-                  <p class="card-text font-weight-bold" style="font-family: 'Lato', sans-serif; font-size: 14px;">Optimize your business with this us, designed to boost<br> your brand, streamline operations</p>
-              </div>
-          </div>
-      </div>
-  </div>
-   -->
-
-
-
-
-
+     
    <div class="container my-5">
     <div class="row text-center">
       <div class="col-md-4 mb-5">
-        <div class="cylindrical-image-container">
-          <img src="/static/Ekak Website9.png" alt="Image 1" class="img-fluid cylindrical-image">
-        </div>
-        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
-        <p class="text-left mt-2 ml-4" style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+          <a href="https://medium.com/@EkakInn/what-is-the-future-of-transportation-edb19a32b4a" class="d-block">
+              <div class="cylindrical-image-container">
+                  <img src="/static/Ekak Website9.png" alt="Image 1" class="img-fluid cylindrical-image">
+              </div>
+          </a>
+          <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG</p>
+          <p class="text-left mt-2 ml-4" style="font-size:17px;">What is the Future of Transportation?</p>
       </div>
       <div class="col-md-4 mb-5">
-        <div class="cylindrical-image-container">
-          <img src="/static/Ekak Website10.png" alt="Image 2" class="img-fluid cylindrical-image">
-        </div>
-        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
-        <p class="text-left mt-2  ml-4" style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+          <a href="https://medium.com/@EkakInn/shantiniketan-the-abode-of-peace-217120057d0b" class="d-block">
+              <div class="cylindrical-image-container">
+                  <img src="/static/Ekak Website10.png" alt="Image 2" class="img-fluid cylindrical-image">
+              </div>
+          </a>
+          <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG</p>
+          <p class="text-left mt-2 ml-4" style="font-size:17px;">Shantiniketan- The Abode Of Peace</p>
       </div>
       <div class="col-md-4 mb-5">
-        <div class="cylindrical-image-container">
-          <img src="/static/Ekak Website11.png" alt="Image 3" class="img-fluid cylindrical-image">
-        </div>
-        <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG  #!</p>
-        <p class="text-left mt-2  ml-4"  style="font-size:14px;">Optimize your business with this us, designed<br> to boost your brand, streamline operations.</p>
+          <a href="https://medium.com/@EkakInn/a-story-to-tell-2544ddc33dde" class="d-block">
+              <div class="cylindrical-image-container">
+                  <img src="/static/Ekak Website11.png" alt="Image 3" class="img-fluid cylindrical-image">
+              </div>
+          </a>
+          <p class="text-left mt-2 ml-4" style="font-size:11px;">EKAK BLOG</p>
+          <p class="text-left mt-2 ml-4" style="font-size:17px;">A Story to tell- Ekak Innovations</p>
       </div>
-    </div>
+  </div>
+  
   </div>
 
   <style>
@@ -898,7 +952,7 @@ text-align: right;
 
 
   <!--Collaborators section-->
-    <div class="container-fluid" style="margin-top:30px">
+    <div class="container-fluid">
       <div class="row">
           <div class="col-md-12 testimonial-container text-center">
               <img src="/static/Ekak Website12.png" style="max-width: 160px;" class="mx-auto d-block hover-effect">
@@ -912,11 +966,12 @@ text-align: right;
                 }
               </style>
               <p class="testimonial">
-                  <i>Amazing collaboration features. My files load extremely fast and I'm able to organize and<br> plan effectively without tech holding us back.</i>
+                  <i>Since our inception, we've been dedicated to delivering innovative and dependable solutions to our <br> clients. We are proud to have been the trusted partner of the following forward-thinking corporations.
+                  </i>
               </p>
-              <p class="author">- Ms. Abd, XYC firm</p>
+              <p class="author">TRUSTED BY TOP BRANDS</p>
               <div class="container-fluid">
-                <div class="row" style="margin-top:200px">
+                <div class="row content-row2" >
                     <div class="col-12 ">
                         <div class="card-group">
                            <div class="card" style="border: none;">
@@ -942,14 +997,22 @@ text-align: right;
   </div>
   
 <style>
+  .content-row2{
+    margin-top:200px;
+  }
   @media (max-width: 576px) {
+    .content-row2{
+      margin-top: 30px;
+    }
     .testimonial {
-      font-size: 1.2rem; 
+      font-size: 0.9rem; 
     }
     .author {
-      font-size: 0.9rem;
-    }
-  }
+      font-size: 0.8rem;
+      margin-top: 10px;
+      font-weight: bold;
+    }}
+  
 </style>
 
 
@@ -989,9 +1052,21 @@ window.addEventListener("scroll", function() {
     </script>
    
   
-
-
-
+    <script>
+      window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+      window.LOCALE = 'en';
+      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+      window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+      window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+      window.translation = {
+        common: {
+          selectedList: '{quantity} list selected',
+          selectedLists: '{quantity} lists selected'
+        }
+      };
+      var AUTOHIDE = Boolean(0);
+    </script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
   
   
   </body>

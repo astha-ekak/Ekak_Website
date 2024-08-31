@@ -1,0 +1,40 @@
+2024-08-31 12:50:05.226 | INFO     | send_html_email:send_mail:16 - Sending Email Start__
+2024-08-31 12:50:05.242 | INFO     | send_html_email:send_mail:22 - _Sender Email : tools@ekak.in
+2024-08-31 12:50:05.242 | INFO     | send_html_email:send_mail:23 - _Reciever Email : richa@ekak.in
+2024-08-31 12:50:05.242 | INFO     | send_html_email:send_mail:24 - _Subject : New Form Submited
+2024-08-31 12:50:05.242 | INFO     | send_html_email:send_mail:25 - _Email_data : 
+        Platform               Name                     Email      Mobile Individual Company Name Message
+0  Argus Website  Astha Dixit Dixit  asthadixit1583@gmail.com  6306563898        N/A          N/A      No
+2024-08-31 12:50:09.697 | INFO     | send_html_email:send_mail:35 - _Email Send 
+2024-08-31 13:35:26.938 | INFO     | send_html_email:send_mail:16 - Sending Email Start__
+2024-08-31 13:35:26.938 | INFO     | send_html_email:send_mail:22 - _Sender Email : tools@ekak.in
+2024-08-31 13:35:26.938 | INFO     | send_html_email:send_mail:23 - _Reciever Email : richa@ekak.in
+2024-08-31 13:35:26.938 | INFO     | send_html_email:send_mail:24 - _Subject : New Form Submited
+2024-08-31 13:35:26.938 | INFO     | send_html_email:send_mail:25 - _Email_data : 
+        Platform  Name          Email      Mobile Individual Company Name Message
+0  Argus Website  ABC   abc@gmail.com  1212121212         NA           NA      ..
+2024-08-31 13:35:30.851 | INFO     | send_html_email:send_mail:35 - _Email Send 
+2024-08-31 13:36:27.870 | INFO     | send_html_email:send_mail:16 - Sending Email Start__
+2024-08-31 13:36:27.870 | INFO     | send_html_email:send_mail:22 - _Sender Email : tools@ekak.in
+2024-08-31 13:36:27.870 | INFO     | send_html_email:send_mail:23 - _Reciever Email : richa@ekak.in
+2024-08-31 13:36:27.870 | INFO     | send_html_email:send_mail:24 - _Subject : New Form Submited
+2024-08-31 13:36:27.870 | INFO     | send_html_email:send_mail:25 - _Email_data : 
+       Platform  Name          Email      Mobile Individual Company Name Message
+0  Ekak Website  ABC   abc@gmail.com  1212121212         NA           NA  ..\r\n
+2024-08-31 13:36:31.343 | INFO     | send_html_email:send_mail:35 - _Email Send 
+2024-08-31 13:37:20.854 | INFO     | send_html_email:send_mail:16 - Sending Email Start__
+2024-08-31 13:37:20.854 | INFO     | send_html_email:send_mail:22 - _Sender Email : tools@ekak.in
+2024-08-31 13:37:20.854 | INFO     | send_html_email:send_mail:23 - _Reciever Email : richa@ekak.in
+2024-08-31 13:37:20.854 | INFO     | send_html_email:send_mail:24 - _Subject : New Form Submited
+2024-08-31 13:37:20.867 | INFO     | send_html_email:send_mail:25 - _Email_data : 
+       Platform  Name          Email      Mobile Individual Company Name      Message
+0  Ekak Website  ABC   abc@gmail.com  1212121212         NA           NA  ...........
+2024-08-31 13:37:24.207 | INFO     | send_html_email:send_mail:35 - _Email Send 
+2024-08-31 13:37:59.767 | INFO     | send_html_email:send_mail:16 - Sending Email Start__
+2024-08-31 13:37:59.770 | INFO     | send_html_email:send_mail:22 - _Sender Email : tools@ekak.in
+2024-08-31 13:37:59.771 | INFO     | send_html_email:send_mail:23 - _Reciever Email : richa@ekak.in
+2024-08-31 13:37:59.771 | INFO     | send_html_email:send_mail:24 - _Subject : New Form Submited
+2024-08-31 13:37:59.771 | INFO     | send_html_email:send_mail:25 - _Email_data : 
+       Platform  Name          Email      Mobile Individual Company Name Message
+0  Ekak Website  ABC   abc@gmail.com  1212121212         NA           NA     ...
+2024-08-31 13:38:03.450 | INFO     | send_html_email:send_mail:35 - _Email Send 

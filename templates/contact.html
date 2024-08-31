@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -133,7 +133,7 @@
             <div class="row">
                 <div class="col text-center text-md-start">
                     <p class="text-extra-large mb-0">
-                        <span class="highlight">Smarter with</span> us
+                        <span class="highlight" style="font-style:italic">Smarter with</span> us
                     </p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
         
             .text-large {
                 font-size: 82px;
-                font-family: 'Red Hat Display', sans-serif;
+                font-family: "poppins", sans-serif;
                 white-space: nowrap;
             }
         
@@ -168,7 +168,7 @@
                 text-align: left;
                 margin-left: 50px;
                 font-size: 80px;
-                font-family: 'Lato', sans-serif;
+                font-family:  "poppins", sans-serif;
                 white-space: nowrap;
             }
         
@@ -214,7 +214,7 @@
    
         <div class="row">
           <div class="col-sm-5 p-5">
-            <form class="responsive-form" style="margin-top: 30px;">
+            <!-- <form class="responsive-form" style="margin-top: 30px;">
               <div class="mb-3">
                   <label for="exampleInputText1" class="form-label">NAME</label>
                   <input type="text" class="form-control" id="exampleInputText1">
@@ -224,18 +224,139 @@
                   <input type="email" class="form-control" id="exampleInputEmail1">
               </div>
               <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label">PHONE NO.</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" name="phone" required>
+            </div>
+            
+              <div class="mb-3">
                   <label for="exampleInputText3" class="form-label">INDIVIDUAL / COMPANY</label>
                   <input type="text" class="form-control" id="exampleInputText3">
               </div>
               <div class="mb-3">
-                  <label for="exampleInputText4" class="form-label">COMPANY NAME IF COMPANY</label>
-                  <input type="text" class="form-control" id="exampleInputText4">
-              </div>
+                <label for="exampleInputText3" class="form-label">COMPANY NAME (IF APPLICABLE)</label>
+                <input type="text" class="form-control" id="exampleInputText3">
+            </div>
               <div class="mb-3">
-                  <label for="exampleFormControlTextarea2" class="form-label">HOW CAN WE HELP YOU</label>
+                <label for="exampleInputText3" class="form-label">PURPOSE</label>
+                <input type="text" class="form-control" id="exampleInputText3">
+            </div>
+           
+              <div class="mb-3">
+                <label for="exampleInputText3" class="form-label">SECTOR (Optional)</label>
+                <input type="text" class="form-control" id="exampleInputText3">
+            </div>
+        
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea2" class="form-label">HOW CAN WE HELP YOU ?</label>
                   <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
               </div>
+          </form> -->
+
+
+
+          <form action="/contact" method="POST" style="margin-left: 50px;margin-right:120px;margin-top:30px;">
+            {{form.hidden_tag()}}
+            
+            <div class="mb-3">
+              {{ form.name.label(for="name", class="form-label")}}
+                {{ form.name(id="name",class="form-control",onkeypress='return blockSpecialChar(event)')}}
+                {% if form.errors.name %}
+                <ul>
+                  {% for error in form.errors.name %}
+                  <li class="text-danger">{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            
+            <div class="mb-3">
+              {{ form.email.label(for="email", class="form-label")}}
+                {{ form.email(id="email",class="form-control")}}
+                {% if form.errors.email %}
+                <ul>
+                  {% for error in form.errors.email %}
+                  <li class="text-danger">{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+              {{ form.mobile.label(for="mobile", class="form-label")}}
+                {{ form.mobile(id="mobile",class="form-control",onkeypress='return numberValidation(event)')}}
+                {% if form.errors.mobile %}
+                <ul>
+                  {% for error in form.errors.mobile %}
+                  <li class="text-danger">{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+
+            <div class="mb-3">
+              {{ form.individual.label(for="individual", class="form-label")}}
+                {{ form.individual(id="individual",class="form-control")}}
+                {% if form.errors.individual %}
+                <ul>
+                  {% for error in form.errors.individual %}
+                  <li class="text-danger">{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+
+            <div class="mb-3">
+              {{ form.company_name.label(for="company_name", class="form-label")}}
+                {{ form.company_name(id="company_name",class="form-control")}}
+                {% if form.errors.company_name %}
+                <ul>
+                  {% for error in form.errors.company_name %}
+                  <li class="text-danger">{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+
+
+
+            <div class="mb-3">
+                {{ form.purpose.label(for="purpose", class="form-label")}}
+                  {{ form.purpose(id="purpose",class="form-control")}}
+                  {% if form.errors.company_name %}
+                  <ul>
+                    {% for error in form.errors.purpose %}
+                    <li class="text-danger">{{error}}</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+              </div>
+            
+
+            <div class="mb-3">
+              {{ form.help.label(for="help", class="form-label")}}
+                {{ form.help(id="help",class="form-control")}}
+                {% if form.errors.help %}
+                <ul>
+                  {% for error in form.errors.help %}
+                  <li class="text-danger" >{{error}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+              {{ form.submit(class='submit btn btn-outline-primary rounded-1')}}
+             
+            </div>
+            <div class="mb-3">
+
+                {% if form_submit %}
+                <ul>
+                  <li class="text-success" >Your Form Submit! We Will get You</li>
+                </ul>
+                {% endif %}
+            </div>
           </form>
+
+
           
           <style>
           /* Default styles for larger screens */
@@ -266,7 +387,7 @@
                   background-image: url('/static/contact7.png');
                   background-size: cover;
                   background-position: center;
-                  height: 550px;
+                  height:850px;
                   margin-top: -60px;
               }
           
@@ -320,8 +441,9 @@
       .scrolling-text-list li {
           margin-right: 70px; /* Space between the items */
           font-size: 38px;
-          font-family: 'Lato', sans-serif;
-          color: grey;
+          font-family:  "poppins", sans-serif;
+          color: black;
+          font-style: italic;
       }
       
       /* Keyframes for seamless scrolling effect */
@@ -335,7 +457,127 @@
       }
       </style>
       
-
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <style>
+          
+      
+          .container0 {
+              width: 90%;
+              margin: 0 auto;
+             
+              
+          }
+      
+          .row0 {
+              
+              margin-top: 50px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+           
+              
+             
+          }
+          .custom1-hr {
+              border: none;
+              height: 2px; 
+              background-color: #00000039; 
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+              margin-top: 20px;
+              margin-bottom: 20px;
+          }
+          .column0 {
+              flex: 1;
+            
+              box-sizing: border-box;
+              text-align: left;
+              height: auto; 
+              border:none;
+          }
+      
+      
+          .column0 ul li{
+              padding-top:10px;
+              font-family: "Poppins", sans-serif;
+              
+      
+          }
+          .column0 img {
+              width: 30%;
+             
+              margin:0;
+              padding:0;
+          }
+      
+          
+      
+         
+          .email-form {
+              display: flex;
+              justify-content: center;
+              align-items: left;
+              
+              width: 100%;
+          }
+      
+          .email-input {
+              padding: 10px;
+              border: 1px solid #090707;
+              border-radius: 20px 0 0 20px;
+              outline: none;
+              width: 90%;
+              border-right: none; /* To remove right border when next to button */
+          }
+      
+          .submit-button {
+              width: 47px;
+              height: 45px;
+              background-color: #000;
+              border: 1px solid #000;
+              border-radius: 20px 20px 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              border-left: none; 
+          }
+      
+          .submit-button i {
+              color: #fff;
+              padding:0;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+              font-size: 20px;
+          }
+      
+          .column0 ul {
+              list-style-type: none;
+              padding: 0;           
+              margin: 10px 0 0;      
+          }
+      
+          .row0 p {
+              text-align: left;
+              width: 100%;
+          }
+      
+          /* Responsive Design for Smaller Screens */
+        
+      
+          @media (max-width: 768px) {
+              .column0 {
+                  flex-basis: 100%;
+                  text-align: center;  /* Center-align the content within the column */
+              }
+              .column0 h3,
+              .column0 p,
+              .column0 ul {
+                  text-align: left;   /* Left-align text within the content */
+              }
+          }
+      </style>
+      {% include 'base_footer.html' %}
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
    
@@ -367,6 +609,6 @@
             </script>
            
       
-      {% include 'base_footer.html' %}
+      
 </body>
 </html>
